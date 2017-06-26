@@ -1,15 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.medistats.MainActivity">
+    android:orientation="vertical">
 
-    <TextView
+    <Button
+        android:id="@+id/signup"
+        android:padding="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:textSize="100sp" />
+        android:layout_gravity="center"
+        android:layout_weight="4"
+        android:clickable="true"
+        android:text="@string/signup"
+        android:visibility="visible" />
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/user"
+        android:padding="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:text="@string/user"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/doctor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:clickable="true"
+        android:text="@string/doc"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="4"
+        android:clickable="true"
+        android:text="@string/signin" />
+
+    <Button
+        android:id="@+id/userin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:clickable="true"
+        android:text="@string/user"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/doctorin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:clickable="true"
+        android:text="@string/doc"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/forgetpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:text="@string/forgetpass" />
+
+</LinearLayout>
