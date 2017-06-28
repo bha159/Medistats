@@ -45,7 +45,7 @@
             android:padding="1dp"
             android:text="@string/data"
             android:textAllCaps="false"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="12sp"
             android:visibility="invisible" />
 
@@ -61,7 +61,7 @@
             android:padding="1dp"
             android:text="@string/user"
             android:textAllCaps="false"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="12sp"
             android:visibility="invisible" />
 
@@ -77,7 +77,7 @@
             android:padding="1dp"
             android:text="@string/doc"
             android:textAllCaps="false"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="12sp"
             android:visibility="invisible" />
 
@@ -93,7 +93,7 @@
             android:padding="1dp"
             android:text="@string/IVF"
             android:textAllCaps="false"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="12sp"
             android:visibility="invisible" />
 
@@ -123,7 +123,7 @@
             android:padding="1dp"
             android:text="@string/data"
             android:textAllCaps="false"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="12sp"
             android:visibility="invisible" />
 
@@ -139,7 +139,7 @@
             android:padding="1dp"
             android:text="@string/user"
             android:textAllCaps="false"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="12sp"
             android:visibility="invisible" />
 
@@ -155,7 +155,7 @@
             android:padding="1dp"
             android:text="@string/doc"
             android:textAllCaps="false"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="12sp"
             android:visibility="invisible" />
 
@@ -171,7 +171,7 @@
             android:padding="1dp"
             android:text="@string/IVF"
             android:textAllCaps="false"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="12sp"
             android:visibility="invisible" />
 

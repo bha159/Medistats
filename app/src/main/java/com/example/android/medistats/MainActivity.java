@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         signup = (Button) findViewById(R.id.signup);
         data = (Button) findViewById(R.id.data);
-        user = (Button)findViewById(R.id.user);
-        doc = (Button)findViewById(R.id.doctor);
+        user = (Button)findViewById(R.id.userup);
+        doc = (Button)findViewById(R.id.docup);
         ivf = (Button) findViewById(R.id.ivf);
         signin = (Button) findViewById(R.id.signin);
         datain = (Button) findViewById(R.id.datain);
@@ -46,6 +46,8 @@ public class MainActivity extends AppCompatActivity
                 ivf.setVisibility(View.VISIBLE);
                 datain.setVisibility(View.INVISIBLE);
                 ivfin.setVisibility(View.INVISIBLE);
+                userin.setVisibility(View.INVISIBLE);
+                docin.setVisibility(View.INVISIBLE);
             }
         });
 
@@ -56,6 +58,8 @@ public class MainActivity extends AppCompatActivity
                 ivfin.setVisibility(View.VISIBLE);
                 data.setVisibility((View.INVISIBLE));
                 ivf.setVisibility(View.INVISIBLE);
+                user.setVisibility(View.INVISIBLE);
+                doc.setVisibility(View.INVISIBLE);
             }
         });
 
@@ -81,7 +85,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 ivf.setVisibility(View.INVISIBLE);
-                Intent intent = new Intent(MainActivity.this,SignIn.class);
+                Intent intent = new Intent(MainActivity.this,SignUpUser.class);
                 startActivity(intent);
                 finish();
             }
@@ -91,7 +95,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 ivf.setVisibility(View.INVISIBLE);
-                Intent intent = new Intent(MainActivity.this,SignIn.class);
+                Intent intent = new Intent(MainActivity.this,SignUpDoc.class);
                 startActivity(intent);
                 finish();
             }
@@ -101,7 +105,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 ivfin.setVisibility(View.INVISIBLE);
-                Intent intent = new Intent(MainActivity.this,SignUp.class);
+                Intent intent = new Intent(MainActivity.this,SignInUser.class);
                 startActivity(intent);
                 finish();
             }
@@ -111,7 +115,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 ivfin.setVisibility(View.INVISIBLE);
-                Intent intent = new Intent(MainActivity.this,SignUp.class);
+                Intent intent = new Intent(MainActivity.this,SignInUser.class);
                 startActivity(intent);
                 finish();
             }
