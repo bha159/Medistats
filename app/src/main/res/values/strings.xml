@@ -5,4 +5,6 @@
     <string name="forgetpass">Forget Password</string>
     <string name="user">User</string>
     <string name="doc">Doctor</string>
+    <string name="data">Database</string>
+    <string name="IVF">IVF</string>
 </resources>

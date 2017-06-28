@@ -1,72 +1,192 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true">
 
-    <Button
-        android:id="@+id/signup"
-        android:padding="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_weight="4"
-        android:clickable="true"
-        android:text="@string/signup"
-        android:visibility="visible" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/main_bg" />
 
-    <Button
-        android:id="@+id/user"
-        android:padding="15dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="4"
-        android:text="@string/user"
-        android:visibility="invisible" />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/doctor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="4"
-        android:clickable="true"
-        android:text="@string/doc"
-        android:visibility="invisible" />
 
-    <Button
-        android:id="@+id/signin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_weight="4"
-        android:clickable="true"
-        android:text="@string/signin" />
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="6dp"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:layout_weight="3"
+            android:background="@drawable/custombutton"
+            android:clickable="true"
+            android:padding="1dp"
+            android:text="@string/signup"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp"
+            android:visibility="visible" />
 
-    <Button
-        android:id="@+id/userin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="4"
-        android:clickable="true"
-        android:text="@string/user"
-        android:visibility="invisible" />
+        <Button
+            android:id="@+id/data"
+            android:layout_width="wrap_content"
+            android:layout_height="6dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="8dp"
+            android:layout_weight="2"
+            android:background="@drawable/custombutton"
+            android:clickable="true"
+            android:padding="1dp"
+            android:text="@string/data"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="invisible" />
 
-    <Button
-        android:id="@+id/doctorin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="4"
-        android:clickable="true"
-        android:text="@string/doc"
-        android:visibility="invisible" />
+        <Button
+            android:id="@+id/userup"
+            android:layout_width="wrap_content"
+            android:layout_height="6dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/custombutton"
+            android:clickable="true"
+            android:padding="1dp"
+            android:text="@string/user"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="invisible" />
 
-    <Button
-        android:id="@+id/forgetpass"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_weight="1"
-        android:clickable="true"
-        android:text="@string/forgetpass" />
+        <Button
+            android:id="@+id/docup"
+            android:layout_width="wrap_content"
+            android:layout_height="6dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/custombutton"
+            android:clickable="true"
+            android:padding="1dp"
+            android:text="@string/doc"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="invisible" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/ivf"
+            android:layout_width="wrap_content"
+            android:layout_height="6dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="8dp"
+            android:layout_weight="2"
+            android:background="@drawable/custombutton"
+            android:clickable="true"
+            android:padding="1dp"
+            android:text="@string/IVF"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/signin"
+            android:layout_width="wrap_content"
+            android:layout_height="6dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:layout_weight="3"
+            android:background="@drawable/custombutton"
+            android:clickable="true"
+            android:padding="1dp"
+            android:text="@string/signin"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/datain"
+            android:layout_width="wrap_content"
+            android:layout_height="8dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="8dp"
+            android:layout_weight="2"
+            android:background="@drawable/custombutton"
+            android:clickable="true"
+            android:padding="1dp"
+            android:text="@string/data"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/userin"
+            android:layout_width="wrap_content"
+            android:layout_height="6dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/custombutton"
+            android:clickable="true"
+            android:padding="1dp"
+            android:text="@string/user"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/docin"
+            android:layout_width="wrap_content"
+            android:layout_height="6dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/custombutton"
+            android:clickable="true"
+            android:padding="1dp"
+            android:text="@string/doc"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/ivfin"
+            android:layout_width="wrap_content"
+            android:layout_height="8dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="6dp"
+            android:layout_weight="2"
+            android:background="@drawable/custombutton"
+            android:clickable="true"
+            android:padding="1dp"
+            android:text="@string/IVF"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/forgetpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="4dp"
+            android:text="@string/forgetpass"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+</FrameLayout>
+

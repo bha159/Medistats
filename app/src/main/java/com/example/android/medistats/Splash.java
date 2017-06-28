@@ -16,12 +16,13 @@ import android.support.v7.app.AppCompatActivity;
 
 public class Splash extends AppCompatActivity
 {
-
+    //Bitmap logo = findViewById(R.id.logo);
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         Intent intent = new Intent(this, MainActivity.class);
+        //writeOnDrawable(logo,"MEDISTATS");
         startActivity(intent);
         finish();
     }
