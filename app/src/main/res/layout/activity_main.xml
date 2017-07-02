@@ -36,7 +36,7 @@
         <Button
             android:id="@+id/data"
             android:layout_width="wrap_content"
-            android:layout_height="6dp"
+            android:layout_height="0dp"
             android:layout_gravity="center_horizontal"
             android:layout_margin="8dp"
             android:layout_weight="2"
@@ -52,7 +52,7 @@
         <Button
             android:id="@+id/userup"
             android:layout_width="wrap_content"
-            android:layout_height="6dp"
+            android:layout_height="0dp"
             android:layout_gravity="center_horizontal"
             android:layout_margin="8dp"
             android:layout_weight="1"
@@ -68,7 +68,7 @@
         <Button
             android:id="@+id/docup"
             android:layout_width="wrap_content"
-            android:layout_height="6dp"
+            android:layout_height="0dp"
             android:layout_gravity="center_horizontal"
             android:layout_margin="8dp"
             android:layout_weight="1"
@@ -84,7 +84,7 @@
         <Button
             android:id="@+id/ivf"
             android:layout_width="wrap_content"
-            android:layout_height="6dp"
+            android:layout_height="0dp"
             android:layout_gravity="center_horizontal"
             android:layout_margin="8dp"
             android:layout_weight="2"
@@ -114,7 +114,7 @@
         <Button
             android:id="@+id/datain"
             android:layout_width="wrap_content"
-            android:layout_height="8dp"
+            android:layout_height="0dp"
             android:layout_gravity="center_horizontal"
             android:layout_margin="8dp"
             android:layout_weight="2"
@@ -130,7 +130,7 @@
         <Button
             android:id="@+id/userin"
             android:layout_width="wrap_content"
-            android:layout_height="6dp"
+            android:layout_height="0dp"
             android:layout_gravity="center_horizontal"
             android:layout_margin="8dp"
             android:layout_weight="1"
@@ -146,7 +146,7 @@
         <Button
             android:id="@+id/docin"
             android:layout_width="wrap_content"
-            android:layout_height="6dp"
+            android:layout_height="0dp"
             android:layout_gravity="center_horizontal"
             android:layout_margin="8dp"
             android:layout_weight="1"
@@ -162,7 +162,7 @@
         <Button
             android:id="@+id/ivfin"
             android:layout_width="wrap_content"
-            android:layout_height="8dp"
+            android:layout_height="0dp"
             android:layout_gravity="center_horizontal"
             android:layout_margin="6dp"
             android:layout_weight="2"
@@ -189,4 +189,3 @@
             android:textSize="16sp" />
     </LinearLayout>
 </FrameLayout>
-

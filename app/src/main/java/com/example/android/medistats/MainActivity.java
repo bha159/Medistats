@@ -1,13 +1,11 @@
 package com.example.android.medistats;
 
-//import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-//import static com.example.android.medistats.R.id.userin;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -43,7 +41,9 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 data.setVisibility(View.VISIBLE);
+                data.setHeight(6);
                 ivf.setVisibility(View.VISIBLE);
+                ivf.setHeight(6);
                 datain.setVisibility(View.INVISIBLE);
                 ivfin.setVisibility(View.INVISIBLE);
                 userin.setVisibility(View.INVISIBLE);
@@ -55,7 +55,9 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 datain.setVisibility(View.VISIBLE);
+                datain.setHeight(6);
                 ivfin.setVisibility(View.VISIBLE);
+                ivfin.setHeight(6);
                 data.setVisibility((View.INVISIBLE));
                 ivf.setVisibility(View.INVISIBLE);
                 user.setVisibility(View.INVISIBLE);
@@ -67,7 +69,9 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 user.setVisibility(View.VISIBLE);
+                user.setHeight(6);
                 doc.setVisibility(View.VISIBLE);
+                doc.setHeight(6);
                 ivf.setVisibility(View.INVISIBLE);
             }
         });
@@ -76,7 +80,9 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 userin.setVisibility(View.VISIBLE);
+                userin.setHeight(6);
                 docin.setVisibility(View.VISIBLE);
+                docin.setHeight(6);
                 ivfin.setVisibility(View.INVISIBLE);
             }
         });
@@ -144,4 +150,3 @@ public class MainActivity extends AppCompatActivity
         super.onPause();
     }
 }
-
