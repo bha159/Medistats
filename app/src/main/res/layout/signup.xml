@@ -18,7 +18,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="24dp"
             android:contentDescription="Cross"
-            android:src="@drawable/splash" />
+            android:src="@drawable/logo0" />
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"

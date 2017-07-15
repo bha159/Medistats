@@ -9,129 +9,64 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity
 {
-    Button signup;
-    Button data;
-    Button user;
-    Button doc;
+    Button database;
     Button ivf;
-    Button datain;
-    Button userin;
-    Button docin;
-    Button ivfin;
-    Button signin;
-    TextView forgetpas;
+    TextView user_name;
+    TextView password;
+    TextView forgetpass;
+    TextView signup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        signup = (Button) findViewById(R.id.signup);
-        data = (Button) findViewById(R.id.data);
-        user = (Button)findViewById(R.id.userup);
-        doc = (Button)findViewById(R.id.docup);
+        database = (Button) findViewById(R.id.database);
         ivf = (Button) findViewById(R.id.ivf);
-        signin = (Button) findViewById(R.id.signin);
-        datain = (Button) findViewById(R.id.datain);
-        userin = (Button)findViewById(R.id.userin);
-        docin = (Button)findViewById(R.id.docin);
-        ivfin = (Button) findViewById(R.id.ivfin);
+        user_name = (TextView) findViewById(R.id.user_name);
+        password = (TextView) findViewById(R.id.password);
+        forgetpass = (TextView) findViewById(R.id.forgetpass);
+        signup = (TextView) findViewById(R.id.signup);
 
-        signup.setOnClickListener(new View.OnClickListener() {
+        database.setOnClickListener(new View.OnClickListener() 
+        {
             @Override
-            public void onClick(View v) {
-                data.setVisibility(View.VISIBLE);
-                data.setHeight(6);
-                ivf.setVisibility(View.VISIBLE);
-                ivf.setHeight(6);
-                datain.setVisibility(View.INVISIBLE);
-                ivfin.setVisibility(View.INVISIBLE);
-                userin.setVisibility(View.INVISIBLE);
-                docin.setVisibility(View.INVISIBLE);
-            }
-        });
-
-        signin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                datain.setVisibility(View.VISIBLE);
-                datain.setHeight(6);
-                ivfin.setVisibility(View.VISIBLE);
-                ivfin.setHeight(6);
-                data.setVisibility((View.INVISIBLE));
-                ivf.setVisibility(View.INVISIBLE);
-                user.setVisibility(View.INVISIBLE);
-                doc.setVisibility(View.INVISIBLE);
-            }
-        });
-
-        data.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                user.setVisibility(View.VISIBLE);
-                user.setHeight(6);
-                doc.setVisibility(View.VISIBLE);
-                doc.setHeight(6);
-                ivf.setVisibility(View.INVISIBLE);
-            }
-        });
-
-        datain.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                userin.setVisibility(View.VISIBLE);
-                userin.setHeight(6);
-                docin.setVisibility(View.VISIBLE);
-                docin.setHeight(6);
-                ivfin.setVisibility(View.INVISIBLE);
-            }
-        });
-
-        user.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ivf.setVisibility(View.INVISIBLE);
-                Intent intent = new Intent(MainActivity.this,SignUpUser.class);
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(MainActivity.this,DataBase.class);
                 startActivity(intent);
                 finish();
             }
         });
 
-        doc.setOnClickListener(new View.OnClickListener() {
+        ivf.setOnClickListener(new View.OnClickListener() 
+        {
             @Override
-            public void onClick(View v) {
-                ivf.setVisibility(View.INVISIBLE);
-                Intent intent = new Intent(MainActivity.this,SignUpDoc.class);
+            public void onClick(View v) 
+            {
+                Intent intent = new Intent(MainActivity.this,IVF.class);
                 startActivity(intent);
                 finish();
             }
         });
 
-        userin.setOnClickListener(new View.OnClickListener() {
+        forgetpass.setOnClickListener(new View.OnClickListener() 
+        {
             @Override
-            public void onClick(View v) {
-                ivfin.setVisibility(View.INVISIBLE);
-                Intent intent = new Intent(MainActivity.this,SignInUser.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-
-        docin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ivfin.setVisibility(View.INVISIBLE);
-                Intent intent = new Intent(MainActivity.this,SignInUser.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-
-        forgetpas = (TextView) findViewById(R.id.forgetpass);
-        forgetpas.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+            public void onClick(View v) 
+            {
                 Intent intent = new Intent(MainActivity.this,ForgetPass.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        signup.setOnClickListener(new View.OnClickListener() 
+        {
+            @Override
+            public void onClick(View v) 
+            {
+                Intent intent = new Intent(MainActivity.this,SignUp.class);
                 startActivity(intent);
                 finish();
             }

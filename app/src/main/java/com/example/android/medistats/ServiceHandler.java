@@ -1,4 +1,4 @@
-package com.example.shubham.newsreader;
+package com.example.android.medistats;
 
 /**
  * Created by shreeya on 12/4/17.

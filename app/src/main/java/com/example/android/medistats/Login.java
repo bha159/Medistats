@@ -1,5 +1,4 @@
-
-package com.example.shubham.newsreader;
+/*package com.example.android.medistats;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -37,6 +36,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import static com.example.android.medistats.SessionManager.KEY_NAME;
 import static com.example.shubham.newsreader.SessionManager.KEY_NAME;
 
 
@@ -45,7 +45,7 @@ public class Login extends AppCompatActivity
     String myJSON;
     JSONArray peoples=null;
     ArrayList<HashMap<String,String>> personList;
-    SessionManager session;
+    com.example.shubham.newsreader.SessionManager session;
     ListView list;
     EditText Name,etpass;
     Button insert;
@@ -61,7 +61,7 @@ public class Login extends AppCompatActivity
         Name=(EditText)findViewById(R.id.name1);
 
 
-        session = new SessionManager(getApplicationContext());
+        session = new com.example.shubham.newsreader.SessionManager(getApplicationContext());
 
 
         etpass=(EditText)findViewById(R.id.pass1);
@@ -178,3 +178,4 @@ public class Login extends AppCompatActivity
         }
     }
 }
+*/

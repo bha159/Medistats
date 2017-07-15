@@ -3,12 +3,16 @@ package com.example.android.medistats;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-public class SignInDoc extends AppCompatActivity
+/**
+ * Created by ratcoder on 28/6/17.
+ */
+
+public class DataBase extends AppCompatActivity
 {
-    @Override
+	@Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.signindoc);
+        setContentView(R.layout.database);
     }
 }

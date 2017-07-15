@@ -21,7 +21,7 @@ import android.widget.Toast;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
-public class SignUpDoc extends AppCompatActivity
+public class SignUp extends AppCompatActivity
 {
     private static final String TAG = "SignupActivity";
 
@@ -36,7 +36,7 @@ public class SignUpDoc extends AppCompatActivity
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.signupdoc);
+        setContentView(R.layout.signup);
         ButterKnife.inject(this);
 
        /* _signupButton.setOnClickListener(new View.OnClickListener() {

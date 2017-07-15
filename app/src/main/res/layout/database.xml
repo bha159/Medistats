@@ -7,7 +7,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:padding="8dp"
-            android:text="Forget Password"
+            android:text="Database"
             android:textColor="@color/white"
             android:textSize="45sp" />
 </LinearLayout>

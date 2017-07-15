@@ -2,6 +2,7 @@
     <string name="app_name">Medistats</string>
     <string name="signup">Sign Up</string>
     <string name="signin">Log In</string>
+    <string name="singupmsg">You dont have an account?<b>SIGNUP</b></string>
     <string name="forgetpass">Forget Password</string>
     <string name="user">User</string>
     <string name="doc">Doctor</string>

@@ -1,4 +1,4 @@
-package com.example.android.ibot;
+package com.example.android.medistats;
 
 import android.content.Context;
 import android.graphics.Camera;

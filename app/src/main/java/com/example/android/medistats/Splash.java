@@ -16,7 +16,7 @@ import android.support.v7.app.AppCompatActivity;
 
 public class Splash extends AppCompatActivity
 {
-    //Bitmap logo = findViewById(R.id.logo);
+    Bitmap logo = findViewById(R.id.logo);
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -24,22 +24,11 @@ public class Splash extends AppCompatActivity
         Intent intent = new Intent(this, MainActivity.class);
         //writeOnDrawable(logo,"MEDISTATS");
         startActivity(intent);
+        logo.setBackgroundResource(R.drawable.splash_animation);
+        // Get the background, which has been compiled to an AnimationDrawable object.
+        AnimationDrawable frameAnimation = (AnimationDrawable) logo.getBackground();
+        // Start the animation (looped playback by default).
+        frameAnimation.start();
         finish();
-    }
-
-    public BitmapDrawable writeOnDrawable(int drawableId, String text)
-    {
-
-        Bitmap bm = BitmapFactory.decodeResource(getResources(), drawableId).copy(Bitmap.Config.ARGB_8888, true);
-
-        Paint paint = new Paint();
-        //paint.setStyle(Style.FILL);
-        paint.setColor(Color.BLACK);
-        paint.setTextSize(20);
-
-        Canvas canvas = new Canvas(bm);
-        canvas.drawText(text, 0, bm.getHeight()/2, paint);
-
-        return new BitmapDrawable(bm);
     }
 }
