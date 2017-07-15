@@ -1,11 +1,8 @@
 package com.example.android.medistats;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-
-/**
- * Created by ratcoder on 28/6/17.
- */
 
 public class DataBase extends AppCompatActivity
 {
@@ -14,5 +11,19 @@ public class DataBase extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.database);
+    }
+
+    @Override
+    public void onBackPressed()
+    {
+        Intent intent = new Intent(DataBase.this,MainActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
+    @Override
+    protected void onDestroy()
+    {
+        super.onDestroy();
     }
 }
