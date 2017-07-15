@@ -37,7 +37,7 @@ import java.util.HashMap;
 import java.util.List;
 
 import static com.example.android.medistats.SessionManager.KEY_NAME;
-import static com.example.shubham.newsreader.SessionManager.KEY_NAME;
+import static com.example.android.medistats.SessionManager.KEY_NAME;
 
 
 public class Login extends AppCompatActivity
@@ -45,10 +45,10 @@ public class Login extends AppCompatActivity
     String myJSON;
     JSONArray peoples=null;
     ArrayList<HashMap<String,String>> personList;
-    com.example.shubham.newsreader.SessionManager session;
+    com.example.android.medistats.SessionManager session;
     ListView list;
     EditText Name,etpass;
-    Button insert;
+   Button insert;
 
 
     @SuppressLint("NewApi")

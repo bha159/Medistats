@@ -1,4 +1,4 @@
-package com.example.shubham.newsreader;
+/*package com.example.android.medistats;
 
 import android.content.Context;
 import android.content.Intent;
@@ -39,9 +39,7 @@ public class SessionManager {
         editor = pref.edit();
     }
 
-    /**
-     * Create login session
-     * */
+//Cretae login section
     public void createLoginSession(String name, String email){
         // Storing login value as TRUE
         editor.putBoolean(IS_LOGIN, true);
@@ -56,11 +54,7 @@ public class SessionManager {
         editor.commit();
     }
 
-    /**
-     * Check login method wil check user login status
-     * If false it will redirect user to login page
-     * Else won't do anything
-     * */
+    //checking login and redirecting
     public void checkLogin(){
         // Check login status
         if(!this.isLoggedIn()){
@@ -80,9 +74,7 @@ public class SessionManager {
 
 
 
-    /**
-     * Get stored session data
-     * */
+//Get stored data
     public HashMap<String, String> getUserDetails(){
         HashMap<String, String> user = new HashMap<String, String>();
         // user name
@@ -95,9 +87,7 @@ public class SessionManager {
         return user;
     }
 
-    /**
-     * Clear session details
-     * */
+//clear session details
     public void logoutUser(){
         // Clearing all data from Shared Preferences
         editor.clear();
@@ -115,11 +105,9 @@ public class SessionManager {
         _context.startActivity(i);
     }
 
-    /**
-     * Quick check for login
-     * **/
+
     // Get Login State
     public boolean isLoggedIn(){
         return pref.getBoolean(IS_LOGIN, false);
     }
-}
+}*/
