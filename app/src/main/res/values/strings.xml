@@ -10,6 +10,20 @@
     <string name="IVF">Go To IVF</string>
     <string name="cross">Cross Image</string>
     <string name="username">Username</string>
+    <string name="name">Name</string>
+    <string name="email">Email ID</string>
     <string name="password">Password</string>
+    <string name="cnfrmpass">Confirm Password Again</string>
     <string name="who">Who are you?</string>
+    <string name="phoneno">Mobile Number</string>
+    <string name="m">Male</string>
+    <string name="f">Female</string>
+    <string name="oth">Others</string>
+    <string name="hospital_name">Hospital Name OR Private Practitioner?</string>
+    <string name="proof">Upload Valid ID For Proof</string>
+    <string name="upload">Upload</string>
+    <string name="create_acc">Create Account</string>
+    <string name="al_mem">Already a member? Login</string>
+    <string name="fname">First Name</string>
+    <string name="lname">Last Name</string>
 </resources>

@@ -1,7 +1,6 @@
 <resources>
-    <!-- Base application theme. -->
+
     <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
-        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="android:colorBackground">@color/ourColor</item>
@@ -19,9 +18,10 @@
         <item name="android:cacheColorHint">@color/ourColor</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-    <style name="AppTheme.Dark.Dialog" parent="Theme.AppCompat.Dialog">
-        <item name="colorAccent">@color/white</item>
-        <item name="android:textColorPrimary">@color/iron</item>
-        <item name="android:background">@color/primary</item>
+
+    <style name="RadioButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/indigo</item>
+        <item name="colorControlActivated">@color/pink</item>
     </style>
+
 </resources>
