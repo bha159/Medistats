@@ -2,7 +2,6 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/main_bg"
     android:fitsSystemWindows="true">
 
     <LinearLayout
@@ -45,6 +44,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/roundbutton"
+                android:clickable="true"
                 android:contentDescription="@string/user"
                 android:padding="12dp"
                 android:src="@drawable/user" />
@@ -60,6 +60,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/roundbutton"
+                android:clickable="true"
                 android:contentDescription="@string/doc"
                 android:padding="12dp"
                 android:src="@drawable/doc" />
@@ -108,8 +109,8 @@
             android:id="@+id/doc_up"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:visibility="gone"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:visibility="gone">
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
@@ -275,8 +276,8 @@
             android:id="@+id/user_up"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:visibility="gone"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:visibility="gone">
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
