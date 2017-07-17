@@ -1,11 +1,15 @@
 <resources>
     <string name="app_name">Medistats</string>
     <string name="signup">Sign Up</string>
-    <string name="signin">Log In</string>
+    <string name="signin">LogIn</string>
     <string name="singupmsg">You dont have an account?<b>SIGNUP</b></string>
     <string name="forgetpass">Forget Password</string>
     <string name="user">User</string>
     <string name="doc">Doctor</string>
-    <string name="data">Database</string>
-    <string name="IVF">IVF</string>
+    <string name="data">Go To Database</string>
+    <string name="IVF">Go To IVF</string>
+    <string name="cross">Cross Image</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="who">Who are you?</string>
 </resources>
