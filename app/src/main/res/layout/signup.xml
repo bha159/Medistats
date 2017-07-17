@@ -8,17 +8,54 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingLeft="24dp"
-        android:paddingRight="24dp"
-        android:paddingTop="56dp">
+        android:padding="0dp">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="150dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="24dp"
-            android:contentDescription="Cross"
-            android:src="@drawable/logo0" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/aluminum"
+            android:gravity="center"
+            android:text="SIGNUP"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="WHO ARE YOU?"
+            android:textSize="15sp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/user"
+                android:src="@drawable/user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundbutton"
+                android:padding="12dp"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/line"/>
+
+            <ImageView
+                android:id="@+id/line"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" />
+
+            <ImageButton
+                android:id="@+id/doc"
+                android:src="@drawable/doc"
+                android:background="@drawable/roundbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/line"/>
+
+        </RelativeLayout>
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
