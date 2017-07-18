@@ -3,7 +3,7 @@
     <string name="signup">Sign Up</string>
     <string name="signin">LogIn</string>
     <string name="singupmsg">You dont have an account?<b>SIGNUP</b></string>
-    <string name="forgetpass">Forget Password</string>
+    <string name="forgetpass">Forgot Password</string>
     <string name="user">User</string>
     <string name="doc">Doctor</string>
     <string name="data">Go To Database</string>
@@ -26,4 +26,6 @@
     <string name="al_mem">Already a member? Login</string>
     <string name="fname">First Name</string>
     <string name="lname">Last Name</string>
+    <string name="pass_res">Reset Your Password</string>
+    <string name="pass_res_mail">Enter Your Email To Reset Password</string>
 </resources>
