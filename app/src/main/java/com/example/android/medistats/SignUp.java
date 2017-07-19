@@ -48,27 +48,29 @@ public class SignUp extends AppCompatActivity
         final LinearLayout doc_up = (LinearLayout)findViewById(R.id.doc_up);
         final LinearLayout user_up = (LinearLayout)findViewById(R.id.user_up);
         user = (ImageButton)findViewById(R.id.user);
-        doc = (ImageButton)findViewById(R.id.user);
+        doc = (ImageButton)findViewById(R.id.doc);
         user_login = (TextView)findViewById(R.id.user_login);
         doc_login  = (TextView)findViewById(R.id.doc_login);
 
         user.setOnClickListener(new View.OnClickListener()
         {
+
             @Override
-            public void onClick(View v)
+            public void onClick(View arg0)
             {
                 user_up.setVisibility(View.VISIBLE);
-                //doc_up.setVisiblity(View.GONE);
+                doc_up.setVisibility(View.GONE);
             }
+
         });
 
         doc.setOnClickListener(new View.OnClickListener()
         {
             @Override
-            public void onClick(View v)
+            public void onClick(View arg0)
             {
                 user_up.setVisibility(View.GONE);
-                //doc_up.setVisiblity(View.VISIBLE);
+                doc_up.setVisibility(View.VISIBLE);
             }
         });
 
