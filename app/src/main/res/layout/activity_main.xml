@@ -95,31 +95,5 @@
             android:textColor="@color/white"
             android:textSize="16sp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <android.support.v7.widget.AppCompatButton
-                android:id="@+id/database"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:padding="8dp"
-                android:text="@string/data"
-                android:textAllCaps="true"
-                android:textSize="18sp" />
-
-            <android.support.v7.widget.AppCompatButton
-                android:id="@+id/ivf"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:padding="8dp"
-                android:text="@string/IVF"
-                android:textAllCaps="true"
-                android:textSize="18sp" />
-        </LinearLayout>
-
     </LinearLayout>
 </ScrollView>
