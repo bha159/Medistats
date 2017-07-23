@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/movie"
+            android:title="Edit Profile" />
+        <item
+            android:id="@+id/nav_aboutus"
+            android:icon="@drawable/doc"
+            android:title="About Us" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/settings"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_ivf"
+            android:icon="@drawable/user"
+            android:title="Go to IVF" />
+        <item
+            android:id="@+id/nav_partner"
+            android:icon="@drawable/notifications"
+            android:title="Partners" />
+    </group>
+
+</menu>

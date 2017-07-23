@@ -16,7 +16,7 @@ public class ForgetPass extends AppCompatActivity
     @Override
     public void onBackPressed()
     {
-        Intent intent = new Intent(ForgetPass.this,MainActivity.class);
+        Intent intent = new Intent(ForgetPass.this,UserHome.class); //TODO change this
         startActivity(intent);
         finish();
     }
