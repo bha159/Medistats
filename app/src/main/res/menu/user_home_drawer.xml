@@ -8,7 +8,7 @@
             android:title="Home" />
         <item
             android:id="@+id/nav_profile"
-            android:icon="@drawable/movie"
+            android:icon="@drawable/edit"
             android:title="Edit Profile" />
         <item
             android:id="@+id/nav_aboutus"
@@ -24,7 +24,7 @@
             android:title="Go to IVF" />
         <item
             android:id="@+id/nav_partner"
-            android:icon="@drawable/notifications"
+            android:icon="@drawable/partners"
             android:title="Partners" />
     </group>
 

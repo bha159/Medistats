@@ -116,14 +116,21 @@
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="8dp">
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp">
 
                 <EditText
                     android:id="@+id/doc_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/rectangleborder"
+                    android:drawableLeft="@drawable/docperson"
+                    android:drawableStart="@drawable/docperson"
                     android:hint="@string/name"
-                    android:inputType="textCapWords" />
+                    android:inputType="textCapWords"
+                    android:padding="16dp"
+                    android:textColorHint="@color/white" />
             </android.support.design.widget.TextInputLayout>
 
             <LinearLayout
@@ -159,80 +166,118 @@
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="8dp">
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp">
 
                 <EditText
                     android:id="@+id/hospital_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/rectangleborder"
+                    android:drawableLeft="@drawable/hospital"
+                    android:drawableStart="@drawable/hospital"
                     android:hint="@string/hospital_name"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    android:padding="16dp"
+                    android:textColorHint="@color/white" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="8dp">
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp">
 
                 <EditText
                     android:id="@+id/doc_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/rectangleborder"
+                    android:drawableLeft="@drawable/email"
+                    android:drawableStart="@drawable/email"
                     android:hint="@string/email"
-                    android:inputType="textEmailAddress" />
+                    android:inputType="textEmailAddress"
+                    android:padding="16dp"
+                    android:textColorHint="@color/white" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="8dp">
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp">
 
                 <EditText
                     android:id="@+id/doc_phone_no"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/rectangleborder"
                     android:hint="@string/phoneno"
-                    android:inputType="phone" />
+                    android:inputType="phone"
+                    android:padding="16dp"
+                    android:textColorHint="@color/white" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="8dp">
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp">
 
                 <EditText
                     android:id="@+id/doc_username"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/rectangleborder"
+                    android:drawableLeft="@drawable/user"
+                    android:drawableStart="@drawable/user"
                     android:hint="@string/username"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    android:padding="16dp" />
             </android.support.design.widget.TextInputLayout>
 
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="8dp">
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp">
 
                 <EditText
                     android:id="@+id/doc_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/rectangleborder"
+                    android:drawableLeft="@drawable/security"
+                    android:drawableStart="@drawable/security"
                     android:hint="@string/password"
-                    android:inputType="textPassword" />
+                    android:inputType="textPassword"
+                    android:padding="16dp" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="8dp">
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp">
 
                 <EditText
                     android:id="@+id/doc_cnfrm_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/rectangleborder"
+                    android:drawableLeft="@drawable/security"
+                    android:drawableStart="@drawable/security"
                     android:hint="@string/cnfrmpass"
-                    android:inputType="textPassword" />
+                    android:inputType="textPassword"
+                    android:padding="16dp"
+                    android:textColorHint="@color/white" />
             </android.support.design.widget.TextInputLayout>
 
 
@@ -240,6 +285,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:padding="8dp"
+                    android:src="@drawable/id" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -286,27 +338,41 @@
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="8dp">
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp">
 
                 <EditText
                     android:id="@+id/user_namef"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/rectangleborder"
+                    android:drawableLeft="@drawable/user"
+                    android:drawableStart="@drawable/user"
                     android:hint="@string/fname"
-                    android:inputType="textCapWords" />
+                    android:inputType="textCapWords"
+                    android:padding="16dp"
+                    android:textColorHint="@color/white" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="8dp">
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp">
 
                 <EditText
                     android:id="@+id/user_namel"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/rectangleborder"
+                    android:drawableLeft="@drawable/user"
+                    android:drawableStart="@drawable/user"
                     android:hint="@string/lname"
-                    android:inputType="textCapWords" />
+                    android:inputType="textCapWords"
+                    android:padding="16dp"
+                    android:textColorHint="@color/white" />
             </android.support.design.widget.TextInputLayout>
 
             <LinearLayout
@@ -342,67 +408,100 @@
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="8dp">
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp">
 
                 <EditText
                     android:id="@+id/user_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/rectangleborder"
+                    android:drawableLeft="@drawable/email"
+                    android:drawableStart="@drawable/email"
                     android:hint="@string/email"
-                    android:inputType="textEmailAddress" />
+                    android:inputType="textEmailAddress"
+                    android:padding="16dp"
+                    android:textColorHint="@color/white" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="8dp">
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp">
 
                 <EditText
                     android:id="@+id/user_phone_no"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/rectangleborder"
                     android:hint="@string/phoneno"
-                    android:inputType="phone" />
+                    android:inputType="phone"
+                    android:padding="16dp"
+                    android:textColorHint="@color/white" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="8dp">
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp">
 
                 <EditText
                     android:id="@+id/user_username"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/rectangleborder"
+                    android:drawableLeft="@drawable/user"
+                    android:drawableStart="@drawable/user"
                     android:hint="@string/username"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    android:padding="16dp"
+                    android:textColorHint="@color/white" />
             </android.support.design.widget.TextInputLayout>
 
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="8dp">
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp">
 
                 <EditText
                     android:id="@+id/user_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/rectangleborder"
+                    android:drawableLeft="@drawable/security"
+                    android:drawableStart="@drawable/security"
                     android:hint="@string/password"
-                    android:inputType="textPassword" />
+                    android:inputType="textPassword"
+                    android:padding="16dp"
+                    android:textColorHint="@color/white" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="8dp">
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp">
 
                 <EditText
                     android:id="@+id/user_cnfrm_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/rectangleborder"
+                    android:drawableLeft="@drawable/security"
+                    android:drawableStart="@drawable/security"
                     android:hint="@string/cnfrmpass"
-                    android:inputType="textPassword" />
+                    android:inputType="textPassword"
+                    android:padding="16dp"
+                    android:textColorHint="@color/white" />
             </android.support.design.widget.TextInputLayout>
 
 
