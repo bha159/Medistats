@@ -38,7 +38,7 @@
             <Space
                 android:layout_width="0dp"
                 android:layout_height="1dp"
-                android:layout_weight="1"></Space>
+                android:layout_weight="1" />
 
             <ImageButton
                 android:id="@+id/user"
@@ -53,7 +53,7 @@
             <Space
                 android:layout_width="0dp"
                 android:layout_height="1dp"
-                android:layout_weight="1"></Space>
+                android:layout_weight="1" />
 
 
             <ImageButton
@@ -69,7 +69,7 @@
             <Space
                 android:layout_width="0dp"
                 android:layout_height="1dp"
-                android:layout_weight="1"></Space>
+                android:layout_weight="1" />
 
         </LinearLayout>
 
@@ -81,7 +81,7 @@
             <Space
                 android:layout_width="0dp"
                 android:layout_height="1dp"
-                android:layout_weight="1"></Space>
+                android:layout_weight="1" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -92,7 +92,7 @@
             <Space
                 android:layout_width="0dp"
                 android:layout_height="1dp"
-                android:layout_weight="1"></Space>
+                android:layout_weight="1" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -103,7 +103,7 @@
             <Space
                 android:layout_width="0dp"
                 android:layout_height="1dp"
-                android:layout_weight="1"></Space>
+                android:layout_weight="1" />
         </LinearLayout>
 
         <LinearLayout
@@ -126,6 +126,7 @@
                     android:layout_margin="16dp"
                     android:background="@drawable/rectangleborder"
                     android:drawableLeft="@drawable/docperson"
+                    android:drawablePadding="4dp"
                     android:drawableStart="@drawable/docperson"
                     android:hint="@string/name"
                     android:inputType="textCapWords"
@@ -176,6 +177,7 @@
                     android:layout_margin="16dp"
                     android:background="@drawable/rectangleborder"
                     android:drawableLeft="@drawable/hospital"
+                    android:drawablePadding="4dp"
                     android:drawableStart="@drawable/hospital"
                     android:hint="@string/hospital_name"
                     android:inputType="text"
@@ -196,6 +198,7 @@
                     android:layout_margin="16dp"
                     android:background="@drawable/rectangleborder"
                     android:drawableLeft="@drawable/email"
+                    android:drawablePadding="4dp"
                     android:drawableStart="@drawable/email"
                     android:hint="@string/email"
                     android:inputType="textEmailAddress"
@@ -234,6 +237,7 @@
                     android:layout_margin="16dp"
                     android:background="@drawable/rectangleborder"
                     android:drawableLeft="@drawable/user"
+                    android:drawablePadding="4dp"
                     android:drawableStart="@drawable/user"
                     android:hint="@string/username"
                     android:inputType="text"
@@ -254,6 +258,7 @@
                     android:layout_margin="16dp"
                     android:background="@drawable/rectangleborder"
                     android:drawableLeft="@drawable/security"
+                    android:drawablePadding="4dp"
                     android:drawableStart="@drawable/security"
                     android:hint="@string/password"
                     android:inputType="textPassword"
@@ -273,6 +278,7 @@
                     android:layout_margin="16dp"
                     android:background="@drawable/rectangleborder"
                     android:drawableLeft="@drawable/security"
+                    android:drawablePadding="4dp"
                     android:drawableStart="@drawable/security"
                     android:hint="@string/cnfrmpass"
                     android:inputType="textPassword"
@@ -290,6 +296,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
+                    android:contentDescription="@string/upload"
                     android:padding="8dp"
                     android:src="@drawable/id" />
 
@@ -348,6 +355,7 @@
                     android:layout_margin="16dp"
                     android:background="@drawable/rectangleborder"
                     android:drawableLeft="@drawable/user"
+                    android:drawablePadding="4dp"
                     android:drawableStart="@drawable/user"
                     android:hint="@string/fname"
                     android:inputType="textCapWords"
@@ -368,6 +376,7 @@
                     android:layout_margin="16dp"
                     android:background="@drawable/rectangleborder"
                     android:drawableLeft="@drawable/user"
+                    android:drawablePadding="4dp"
                     android:drawableStart="@drawable/user"
                     android:hint="@string/lname"
                     android:inputType="textCapWords"
@@ -418,6 +427,7 @@
                     android:layout_margin="16dp"
                     android:background="@drawable/rectangleborder"
                     android:drawableLeft="@drawable/email"
+                    android:drawablePadding="4dp"
                     android:drawableStart="@drawable/email"
                     android:hint="@string/email"
                     android:inputType="textEmailAddress"
@@ -437,6 +447,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="16dp"
                     android:background="@drawable/rectangleborder"
+                    android:drawablePadding="4dp"
                     android:hint="@string/phoneno"
                     android:inputType="phone"
                     android:padding="16dp"
@@ -456,6 +467,7 @@
                     android:layout_margin="16dp"
                     android:background="@drawable/rectangleborder"
                     android:drawableLeft="@drawable/user"
+                    android:drawablePadding="4dp"
                     android:drawableStart="@drawable/user"
                     android:hint="@string/username"
                     android:inputType="text"
@@ -477,6 +489,7 @@
                     android:layout_margin="16dp"
                     android:background="@drawable/rectangleborder"
                     android:drawableLeft="@drawable/security"
+                    android:drawablePadding="4dp"
                     android:drawableStart="@drawable/security"
                     android:hint="@string/password"
                     android:inputType="textPassword"
@@ -497,6 +510,7 @@
                     android:layout_margin="16dp"
                     android:background="@drawable/rectangleborder"
                     android:drawableLeft="@drawable/security"
+                    android:drawablePadding="4dp"
                     android:drawableStart="@drawable/security"
                     android:hint="@string/cnfrmpass"
                     android:inputType="textPassword"

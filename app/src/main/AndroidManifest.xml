@@ -4,12 +4,13 @@
 
     <uses-sdk
         android:maxSdkVersion="25"
-        android:minSdkVersion="15"
-        android:targetSdkVersion="19" />
+        android:minSdkVersion="21"
+        android:targetSdkVersion="21" />
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -59,7 +60,11 @@
         <activity
             android:name=".UserHome"
             android:label="@string/title_activity_user_home"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".CameraPreview"
+            android:label="@string/title_activity_user_home"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>

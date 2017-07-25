@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,114 +8,62 @@
     tools:context="com.example.android.medistats.UserHome"
     tools:showIn="@layout/app_bar_user_home">
 
-    <LinearLayout
-        android:layout_width="368dp"
-        android:layout_height="495dp"
-        android:orientation="vertical">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        android:padding="8dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <Space
-                android:layout_width="0dp"
-                android:layout_height="1dp"
-                android:layout_weight="1"></Space>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
 
             <ImageButton
-                android:id="@+id/user_dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/roundbutton"
-                android:padding="8dp"
-                android:src="@drawable/user" />
-
-            <Space
+                android:id="@+id/myprof"
                 android:layout_width="0dp"
-                android:layout_height="1dp"
-                android:layout_weight="1"></Space>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:clickable="true"
+                android:layout_height="fill_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/myprof"
                 android:padding="8dp"
-                android:text="Recent History"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+                android:src="@drawable/main_bg" />
 
-            <Space
+            <ImageButton
+                android:id="@+id/history"
                 android:layout_width="0dp"
-                android:layout_height="1dp"
-                android:layout_weight="1"></Space>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:clickable="true"
+                android:layout_height="fill_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/history"
                 android:padding="8dp"
-                android:text="Back History"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+                android:src="@drawable/main_bg" />
+        </TableRow>
 
-            <Space
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/report"
                 android:layout_width="0dp"
-                android:layout_height="1dp"
-                android:layout_weight="1"></Space>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <Space
-                android:layout_width="0dp"
-                android:layout_height="1dp"
-                android:layout_weight="1"></Space>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:clickable="true"
+                android:layout_height="fill_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/report"
                 android:padding="8dp"
-                android:text="Family History"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+                android:src="@drawable/main_bg" />
 
-            <Space
+            <ImageButton
+                android:id="@+id/diary"
                 android:layout_width="0dp"
-                android:layout_height="1dp"
-                android:layout_weight="1"></Space>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:clickable="true"
+                android:layout_height="fill_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/diary"
                 android:padding="8dp"
-                android:text="Reports Upload"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <Space
-                android:layout_width="0dp"
-                android:layout_height="1dp"
-                android:layout_weight="1"></Space>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:clickable="true"
-                android:padding="8dp"
-                android:text="My Diary"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-    </LinearLayout>
-</android.support.constraint.ConstraintLayout>
+                android:src="@drawable/main_bg" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

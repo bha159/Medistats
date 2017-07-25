@@ -4,8 +4,14 @@
     <item android:drawable="@color/ourColor" />
     <item>
         <bitmap
-            android:gravity="center_horizontal"
-            android:id="@+id/logo"
-            android:src="@drawable/logo0" />
+            android:gravity="fill"
+            android:src="@drawable/splash"
+            android:id="@+id/splash"/>
+    </item>
+    <item>
+    <bitmap
+        android:gravity="center_horizontal"
+        android:id="@+id/logo"
+        android:src="@drawable/logo0" />
     </item>
 </layer-list>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:background="@drawable/main_bg">
 
     <LinearLayout
@@ -39,6 +39,7 @@
                 android:layout_margin="16dp"
                 android:background="@drawable/rectangleborder"
                 android:drawableLeft="@drawable/user"
+                android:drawablePadding="4dp"
                 android:drawableStart="@drawable/user"
                 android:hint="@string/username"
                 android:inputType="text"
@@ -59,6 +60,7 @@
                 android:layout_margin="16dp"
                 android:background="@drawable/rectangleborder"
                 android:drawableLeft="@drawable/security"
+                android:drawablePadding="4dp"
                 android:drawableStart="@drawable/security"
                 android:hint="@string/password"
                 android:inputType="textPassword"
@@ -75,7 +77,6 @@
             android:padding="8dp"
             android:text="@string/signin"
             android:textSize="18sp" />
-
 
         <TextView
             android:id="@+id/forgetpass"

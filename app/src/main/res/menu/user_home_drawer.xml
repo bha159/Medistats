@@ -5,27 +5,28 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/home"
-            android:title="Home" />
+            android:title="@string/activity_title_home" />
         <item
             android:id="@+id/nav_profile"
             android:icon="@drawable/edit"
-            android:title="Edit Profile" />
+            android:title="@string/action_edit_prof" />
         <item
             android:id="@+id/nav_aboutus"
             android:icon="@drawable/doc"
-            android:title="About Us" />
+            android:title="@string/activity_title_about_us" />
         <item
             android:id="@+id/nav_setting"
             android:icon="@drawable/settings"
-            android:title="Settings" />
+            android:title="@string/activity_title_settings" />
         <item
             android:id="@+id/nav_ivf"
             android:icon="@drawable/user"
-            android:title="Go to IVF" />
+            android:visible="false"
+            android:title="@string/activity_title_ivf" />
         <item
             android:id="@+id/nav_partner"
             android:icon="@drawable/partners"
-            android:title="Partners" />
+            android:title="@string/activity_title_partners" />
     </group>
 
 </menu>

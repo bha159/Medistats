@@ -11,7 +11,7 @@
     <string name="cross">Cross Image</string>
     <string name="username">Username</string>
     <string name="name">Name</string>
-    <string name="email"> Email ID</string>
+    <string name="email">Email ID</string>
     <string name="password">Password</string>
     <string name="cnfrmpass">Confirm Password Again</string>
     <string name="who">Who are you?</string>
@@ -19,7 +19,7 @@
     <string name="m">Male</string>
     <string name="f">Female</string>
     <string name="oth">Others</string>
-    <string name="hospital_name"> Hospital Name OR Private Practitioner?</string>
+    <string name="hospital_name">Hospital Name OR Private Practitioner?</string>
     <string name="proof">Upload Valid ID For Proof</string>
     <string name="upload">Upload</string>
     <string name="create_acc">Create Account</string>
@@ -29,6 +29,10 @@
     <string name="pass_res">Reset Your Password</string>
     <string name="pass_res_mail">Enter Your Email To Reset Password</string>
     <string name="title_activity_user_home">Home Screen</string>
+    <string name="myprof">My Profile</string>
+    <string name="history">History</string>
+    <string name="report">Report</string>
+    <string name="diary">Diary</string>
     <!-- Navigation Drawer -->
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -36,11 +40,12 @@
     <string name="openDrawer">open_drawer</string>
     <string name="closeDrawer">close_drawer</string>
     <!-- Navigation Drawer menu labels -->
-    <!-- Toolbar titles when navigation menu item is selected -->
+    <string name="activity_title_home">Home</string>
+    <string name="action_edit_prof">Edit Profile</string>
     <string name="activity_title_about_us">About Us</string>
-    <string name="activity_title_privacy_policy">Privacy Policy</string>
-    <string name="action_clear_all">Clear All</string>
+    <string name="activity_title_settings">Settings</string>
+    <string name="activity_title_ivf">Go To IVF</string>
+    <string name="activity_title_partners">Partners</string>
+    <!-- Toolbar titles when navigation menu item is selected -->
     <string name="action_logout">Logout</string>
-    <string name="action_mark_all_read">Mark All as Read</string>
-    <string name="privacy_policy">Privacy Policy</string>
 </resources>
