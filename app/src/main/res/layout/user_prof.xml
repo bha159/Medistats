@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/whitish">
+    android:background="@color/whitish"
+    android:padding="8dp">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_margin="0dp"
         android:background="@color/whitish"
         android:orientation="vertical"
@@ -19,6 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="0dp"
+            android:layout_weight="2"
             android:background="@color/white"
             android:padding="0dp">
 
@@ -35,25 +35,31 @@
                 android:src="@drawable/photos" />
 
             <TextView
+                android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_below="@id/edit_dp"
-                android:layout_margin="8dp"
                 android:text="Upload Picture"
                 android:textAllCaps="true"
                 android:textColor="@color/theme"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_below="@+id/edit_mname"
+                android:layout_alignParentStart="true" />
 
             <EditText
                 android:id="@+id/edit_fname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:layout_margin="8dp"
-                android:background="@drawable/border_black"
                 android:layout_alignRight="@id/edit_dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/textView"
+                android:background="@drawable/border_black"
                 android:hint="@string/fname"
                 android:inputType="text"
                 android:padding="8dp"
@@ -64,10 +70,14 @@
                 android:id="@+id/edit_mname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignRight="@id/edit_dp"
                 android:layout_alignParentEnd="true"
+                android:layout_alignRight="@id/edit_dp"
                 android:layout_below="@id/edit_fname"
-                android:layout_margin="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/textView"
                 android:background="@drawable/border_black"
                 android:hint="@string/mname"
                 android:inputType="text"
@@ -81,8 +91,12 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignRight="@id/edit_dp"
+                android:layout_alignStart="@+id/edit_mname"
                 android:layout_below="@id/edit_mname"
-                android:layout_margin="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@id/textView"
                 android:background="@drawable/border_black"
                 android:hint="@string/lname"
                 android:inputType="text"
@@ -91,5 +105,108 @@
                 android:textColorHint="@color/black" />
 
         </RelativeLayout>
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@color/whitish" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/edit_addr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/border_black"
+                android:hint="Address"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <EditText
+                android:id="@+id/edit_occ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/border_black"
+                android:hint="Occupation"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date Of Birth"
+                    android:textAllCaps="true"
+                    android:textColor="@color/theme"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/edit_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_black"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="Gender"
+                    android:textAllCaps="true"
+                    android:textColor="@color/theme"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:checked="false"
+                    android:padding="8dp"
+                    android:text="@string/m"
+                    android:theme="@style/RadioButton" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:checked="false"
+                    android:padding="8dp"
+                    android:text="@string/f"
+                    android:theme="@style/RadioButton" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:checked="false"
+                    android:padding="8dp"
+                    android:text="@string/oth"
+                    android:theme="@style/RadioButton" />
+            </LinearLayout>
+
+
+        </LinearLayout>
     </LinearLayout>
-    </ScrollView>
+</ScrollView>
