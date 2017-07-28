@@ -48,6 +48,8 @@ public class SignUp extends AppCompatActivity
             {
                 user_up.setVisibility(View.VISIBLE);
                 doc_up.setVisibility(View.GONE);
+                user.setImageResource(R.drawable.user1);
+                doc.setImageResource(R.drawable.doc1);
             }
         });
 
@@ -58,6 +60,8 @@ public class SignUp extends AppCompatActivity
             {
                 user_up.setVisibility(View.GONE);
                 doc_up.setVisibility(View.VISIBLE);
+                user.setImageResource(R.drawable.user);
+                doc.setImageResource(R.drawable.doc);
             }
         });
 

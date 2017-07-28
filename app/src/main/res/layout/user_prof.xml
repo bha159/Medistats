@@ -5,16 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/whitish">
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/my_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:android="http://schemas.android.com/apk/res/android" />
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="wrap_content"
@@ -58,11 +48,12 @@
 
             <EditText
                 android:id="@+id/edit_fname"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_margin="8dp"
                 android:background="@drawable/border_black"
+                android:layout_alignRight="@id/edit_dp"
                 android:hint="@string/fname"
                 android:inputType="text"
                 android:padding="8dp"
@@ -71,8 +62,9 @@
 
             <EditText
                 android:id="@+id/edit_mname"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_alignRight="@id/edit_dp"
                 android:layout_alignParentEnd="true"
                 android:layout_below="@id/edit_fname"
                 android:layout_margin="8dp"
@@ -85,9 +77,10 @@
 
             <EditText
                 android:id="@+id/edit_lname"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
+                android:layout_alignRight="@id/edit_dp"
                 android:layout_below="@id/edit_mname"
                 android:layout_margin="8dp"
                 android:background="@drawable/border_black"

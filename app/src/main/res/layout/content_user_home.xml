@@ -29,7 +29,7 @@
                 android:layout_weight="1"
                 android:contentDescription="@string/myprof"
                 android:padding="8dp"
-                android:src="@drawable/main_bg" />
+                android:src="@drawable/user_myprof" />
 
             <ImageButton
                 android:id="@+id/history"
@@ -39,7 +39,7 @@
                 android:layout_weight="1"
                 android:contentDescription="@string/history"
                 android:padding="8dp"
-                android:src="@drawable/main_bg" />
+                android:src="@drawable/user_hist" />
         </TableRow>
 
         <TableRow
@@ -55,7 +55,7 @@
                 android:layout_weight="1"
                 android:contentDescription="@string/report"
                 android:padding="8dp"
-                android:src="@drawable/main_bg" />
+                android:src="@drawable/user_report" />
 
             <ImageButton
                 android:id="@+id/diary"
@@ -65,7 +65,7 @@
                 android:layout_weight="1"
                 android:contentDescription="@string/diary"
                 android:padding="8dp"
-                android:src="@drawable/main_bg" />
+                android:src="@drawable/user_diary" />
         </TableRow>
     </TableLayout>
 </LinearLayout>
