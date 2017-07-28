@@ -16,8 +16,8 @@
     <string name="cnfrmpass">Confirm Password Again</string>
     <string name="who">Who are you?</string>
     <string name="phoneno">Mobile Number</string>
-    <string name="m">Male</string>
-    <string name="f">Female</string>
+    <string name="m">M</string>
+    <string name="f">F</string>
     <string name="oth">Others</string>
     <string name="hospital_name">Hospital Name OR Private Practitioner?</string>
     <string name="proof">Upload Valid ID For Proof</string>
@@ -25,7 +25,9 @@
     <string name="create_acc">Create Account</string>
     <string name="al_mem">Already a member? Login</string>
     <string name="fname">First Name</string>
+    <string name="mname">Middle Name</string>
     <string name="lname">Last Name</string>
+    <string name="dob">01/01/1990</string>
     <string name="pass_res">Reset Your Password</string>
     <string name="pass_res_mail">Enter Your Email To Reset Password</string>
     <string name="title_activity_user_home">Home Screen</string>

@@ -44,7 +44,7 @@
                 android:id="@+id/user"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/roundbutton"
+                android:background="@drawable/rounduser"
                 android:clickable="true"
                 android:contentDescription="@string/user"
                 android:padding="12dp"
@@ -60,7 +60,7 @@
                 android:id="@+id/doc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/roundbutton"
+                android:background="@drawable/rounddoc"
                 android:clickable="true"
                 android:contentDescription="@string/doc"
                 android:padding="12dp"
@@ -141,7 +141,7 @@
 
                 <RadioButton
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:checked="false"
                     android:padding="8dp"
                     android:text="@string/m"
@@ -149,7 +149,7 @@
 
                 <RadioButton
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:checked="false"
                     android:padding="8dp"
                     android:text="@string/f"
@@ -157,11 +157,37 @@
 
                 <RadioButton
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:checked="false"
                     android:padding="8dp"
                     android:text="@string/oth"
                     android:theme="@style/RadioButton" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="46dp"
+                    android:background="@drawable/rectangleborder"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/doc_dob_tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/dob"
+                        android:contentDescription="@string/dob"
+                        android:padding="8dp"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <ImageButton
+                        android:id="@+id/doc_dob"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:src="@drawable/cal" />
+
+                </LinearLayout>
             </LinearLayout>
 
             <android.support.design.widget.TextInputLayout
@@ -391,7 +417,7 @@
 
                 <RadioButton
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:checked="false"
                     android:padding="8dp"
                     android:text="@string/m"
@@ -399,7 +425,7 @@
 
                 <RadioButton
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:checked="false"
                     android:padding="8dp"
                     android:text="@string/f"
@@ -407,11 +433,37 @@
 
                 <RadioButton
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:checked="false"
                     android:padding="8dp"
                     android:text="@string/oth"
                     android:theme="@style/RadioButton" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="46dp"
+                    android:background="@drawable/rectangleborder"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/user_dob_tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/dob"
+                        android:contentDescription="@string/dob"
+                        android:padding="8dp"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <ImageButton
+                        android:id="@+id/user_dob"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:src="@drawable/cal" />
+
+                </LinearLayout>
             </LinearLayout>
 
             <android.support.design.widget.TextInputLayout

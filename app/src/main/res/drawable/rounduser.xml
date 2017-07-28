@@ -5,10 +5,10 @@
     android:exitFadeDuration="@android:integer/config_mediumAnimTime">
     <!-- NOTE: order is important (the first matching state(s) is what is rendered) -->
     <item
-        android:drawable="@drawable/doc"
-        android:state_selected="true" />
+        android:drawable="@drawable/user"
+        android:state_focused="true" />
     <item
-        android:drawable="@drawable/doc1" />
+        android:drawable="@drawable/user" />
     <shape
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:shape="rectangle">
@@ -20,3 +20,7 @@
             android:topRightRadius="22dp" />
     </shape>
 </selector>
+
+
+
+

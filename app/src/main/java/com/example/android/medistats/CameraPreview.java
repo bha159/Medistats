@@ -32,13 +32,12 @@ import android.hardware.Camera.PictureCallback;
 import android.hardware.Camera.ShutterCallback;
 import android.net.Uri;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.Surface;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class CameraPreview extends AppCompatActivity implements SurfaceHolder.Callback
@@ -47,21 +46,19 @@ public class CameraPreview extends AppCompatActivity implements SurfaceHolder.Ca
     public static Uri savedImageURI;
     public static int a = 1;
     final int RESULT_SAVEIMAGE = 0;
+    final int PICK_IMAGE = 0;
     Camera camera;
     SurfaceView surfaceView;
+    TextView tx;
     SurfaceHolder surfaceHolder;
     boolean previewing = false;
-    LayoutInflater controlInflater = null;
     Button buttonTakePicture;
-    DrawingView drawingView;
-    ImageView image;
+
     ShutterCallback myShutterCallback = new ShutterCallback()
     {
         @Override
         public void onShutter()
         {
-            // TODO Auto-generated method stub
-
         }
     };
     PictureCallback myPictureCallback_RAW = new PictureCallback()
@@ -69,8 +66,6 @@ public class CameraPreview extends AppCompatActivity implements SurfaceHolder.Ca
         @Override
         public void onPictureTaken(byte[] arg0, Camera arg1)
         {
-            // TODO Auto-generated method stub
-
         }
     };
     PictureCallback myPictureCallback_JPG = new PictureCallback()
@@ -78,13 +73,13 @@ public class CameraPreview extends AppCompatActivity implements SurfaceHolder.Ca
         @Override
         public void onPictureTaken(byte[] data, Camera camera)
         {
-            // TODO Auto-generated method stub
             if (data != null) {
                 int screenWidth = getResources().getDisplayMetrics().widthPixels;
                 int screenHeight = getResources().getDisplayMetrics().heightPixels;
                 Bitmap bm = BitmapFactory.decodeByteArray(data, 0, (data != null) ? data.length : 0);
 
-                if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
+                if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT)
+                {
                     // Notice that width and height are reversed
                     Bitmap scaled = Bitmap.createScaledBitmap(bm, screenHeight, screenWidth, true);
                     int w = scaled.getWidth();
@@ -96,9 +91,7 @@ public class CameraPreview extends AppCompatActivity implements SurfaceHolder.Ca
                     bm = Bitmap.createBitmap(scaled, 0, 0, w, h, mtx, true);
                     // image.setImageBitmap(bm);
                     ContextWrapper wrapper = new ContextWrapper(getApplicationContext());
-
                     File file = wrapper.getDir("Images", MODE_PRIVATE);
-
                     file = new File(file, "UniqueFileName" + ".jpg");
 
                     try
@@ -108,7 +101,6 @@ public class CameraPreview extends AppCompatActivity implements SurfaceHolder.Ca
                         bm.compress(Bitmap.CompressFormat.JPEG, 100, stream);
                         stream.flush();
                         stream.close();
-
                     }
                     catch (IOException e) // Catch the exception
                     {
@@ -117,12 +109,9 @@ public class CameraPreview extends AppCompatActivity implements SurfaceHolder.Ca
 
                     // Parse the gallery image url to uri
                     savedImageURI = Uri.parse(file.getAbsolutePath());
-                    Log.e("TAG", " " + savedImageURI);
-                    //Intent intent = new Intent(MainActivity.this, saveimageActivity.class);
-                    //startActivity(intent);
+                    Log.e("TAG", " " + savedImageURI);;
                 }
             }
-
             camera.startPreview();
         }
     };
@@ -132,7 +121,8 @@ public class CameraPreview extends AppCompatActivity implements SurfaceHolder.Ca
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_cam);
+        tx = (TextView) findViewById(R.id.gallery);
 
         if (ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED)
         {
@@ -146,12 +136,10 @@ public class CameraPreview extends AppCompatActivity implements SurfaceHolder.Ca
             if (checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE)
                     != PackageManager.PERMISSION_GRANTED)
             {
-
                 if (shouldShowRequestPermissionRationale(
                         Manifest.permission.READ_EXTERNAL_STORAGE))
                 {
                 }
-
                 requestPermissions(new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, MY_PERMISSIONS_REQUEST_READ_EXTERNAL_STORAGE);
             }
         }
@@ -166,7 +154,6 @@ public class CameraPreview extends AppCompatActivity implements SurfaceHolder.Ca
                         Manifest.permission.WRITE_EXTERNAL_STORAGE))
                 {
                 }
-
                 requestPermissions(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, MY_PERMISSIONS_REQUEST_READ_EXTERNAL_STORAGE);
             }
         }
@@ -177,26 +164,17 @@ public class CameraPreview extends AppCompatActivity implements SurfaceHolder.Ca
         surfaceHolder.addCallback(this);
         surfaceHolder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
 
-        /*drawingView = new DrawingView(this);
-        LinearLayout.LayoutParams layoutParamsDrawing
-                = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.FILL_PARENT,
-                LinearLayout.LayoutParams.FILL_PARENT);
-        this.addContentView(drawingView, layoutParamsDrawing);
-
-        controlInflater = LayoutInflater.from(getBaseContext());
-        View viewControl = controlInflater.inflate(R.layout.control, null);
-        LinearLayout.LayoutParams layoutParamsControl
-                = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.FILL_PARENT,
-                LinearLayout.LayoutParams.FILL_PARENT);
-        this.addContentView(viewControl, layoutParamsControl);
-//image=(ImageView) findViewById(R.id.imageView);
-        LinearLayout l = (LinearLayout) findViewById(R.id.background);
-        if (a == 1) {
-            l.setBackgroundResource(R.drawable.transparent_side);
-        }
-        if (a == 2) {
-            l.setBackgroundResource(R.drawable.transparent_side);
-        }*/
+        tx.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent();
+                intent.setType("image/*");
+                intent.setAction(Intent.ACTION_GET_CONTENT);
+                startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE);
+            }
+        });
         buttonTakePicture = (Button) findViewById(R.id.takepic);
         buttonTakePicture.setOnClickListener(new Button.OnClickListener()
         {
@@ -291,21 +269,6 @@ public class CameraPreview extends AppCompatActivity implements SurfaceHolder.Ca
     @Override
     public void surfaceCreated(SurfaceHolder holder)
     {
-      /*  int cameraCount = 0;
-        int camIdx;
-        Camera.CameraInfo cameraInfo = new Camera.CameraInfo();
-        cameraCount = Camera.getNumberOfCameras();
-        for ( camIdx = 0; camIdx < cameraCount; camIdx++) {
-            Camera.getCameraInfo(camIdx, cameraInfo);
-            if (cameraInfo.facing == Camera.CameraInfo.CAMERA_FACING_FRONT) {
-                try {
-                    camera = Camera.open(camIdx);
-                } catch (RuntimeException e) {
-                    Log.e("TAG", "Camera failed to open: " + e.getLocalizedMessage());
-                }
-            }
-            break;
-        }*/
         int cameraId = findFrontFacingCamera();
         if (cameraId < 0)
         {
@@ -323,7 +286,8 @@ public class CameraPreview extends AppCompatActivity implements SurfaceHolder.Ca
         int rotation = this.getWindowManager().getDefaultDisplay()
                 .getRotation();
         int degrees = 0;
-        switch (rotation) {
+        switch (rotation)
+        {
             case Surface.ROTATION_0:
                 degrees = 0;
                 break;
@@ -378,7 +342,7 @@ public class CameraPreview extends AppCompatActivity implements SurfaceHolder.Ca
         {
             Camera.CameraInfo info = new Camera.CameraInfo();
             Camera.getCameraInfo(i, info);
-            if (info.facing == Camera.CameraInfo.CAMERA_FACING_FRONT)
+            if (info.facing == Camera.CameraInfo.CAMERA_FACING_BACK)
             {
                 Log.d("tag:", "Camera found");
                 cameraId = i;
