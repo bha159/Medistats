@@ -172,7 +172,7 @@ public class MainActivity extends AppCompatActivity
         try
         {
             HttpClient httpClient=new DefaultHttpClient(new BasicHttpParams());
-            HttpPost httpPost=new HttpPost("http://192.168.43.224/login.php");
+            HttpPost httpPost=new HttpPost("http://172.16.102.87/medistats/Login.php");
             InputStream inputStream=null;
             httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
             HttpResponse response=httpClient.execute(httpPost);
