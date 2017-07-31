@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Medistats</string>
+    <string name="back">Back Button</string>
     <string name="signup">Sign Up</string>
     <string name="signin">LogIn</string>
     <string name="singupmsg">You dont have an account?<b>SIGNUP</b></string>
