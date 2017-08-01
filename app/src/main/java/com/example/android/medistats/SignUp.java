@@ -137,7 +137,7 @@ public class SignUp extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(SignUp.this, MainActivity.class);
                 startActivity(intent);
-                finish();
+                //finish();
             }
         });
 
@@ -146,7 +146,7 @@ public class SignUp extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(SignUp.this, MainActivity.class);
                 startActivity(intent);
-                finish();
+                //finish();
             }
         });
 
@@ -155,7 +155,7 @@ public class SignUp extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(SignUp.this, CameraPreview.class);
                 startActivity(intent);
-                finish();
+                //finish();
             }
         });
 
@@ -403,7 +403,8 @@ public class SignUp extends AppCompatActivity {
     */
 
     @Override
-    public void onBackPressed() {
+    public void onBackPressed()
+    {
         Intent intent = new Intent(SignUp.this, MainActivity.class);
         startActivity(intent);
         finish();

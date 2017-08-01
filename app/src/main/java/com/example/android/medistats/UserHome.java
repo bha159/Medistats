@@ -173,7 +173,7 @@ public class UserHome extends AppCompatActivity implements NavigationView.OnNavi
         }
         else if (id == R.id.nav_ivf)
         {
-            Intent i = new Intent(UserHome.this,UserHome.class);
+            Intent i = new Intent(UserHome.this,IVF.class);
             startActivity(i);
             finish();
         }

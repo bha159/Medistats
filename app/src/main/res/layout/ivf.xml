@@ -1,13 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:padding="8dp"
-            android:text="IVF"
-            android:textColor="@color/white"
-            android:textSize="45sp" />
-</LinearLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/ivf_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:background="@color/theme"
+        android:padding="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivf_backbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:clickable="true"
+                android:contentDescription="@string/back"
+                android:src="@drawable/arrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="IVF"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ivf_toolbar"
+        android:background="@color/whitish"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/ivf_near"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:contentDescription="IVF Nearby"
+                android:padding="8dp"
+                android:src="@drawable/ivf_near" />
+
+            <ImageButton
+                android:id="@+id/ivf_book"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:contentDescription="IVF Booking"
+                android:padding="8dp"
+                android:src="@drawable/user_hist" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/ivf_pay"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:contentDescription="IVF Payment"
+                android:padding="8dp"
+                android:src="@drawable/ivf_pay" />
+
+            <ImageButton
+                android:id="@+id/ivf_port"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:contentDescription="IVF Portfolio"
+                android:padding="8dp"
+                android:src="@drawable/ivf_port" />
+        </TableRow>
+
+    </LinearLayout>
+</RelativeLayout>

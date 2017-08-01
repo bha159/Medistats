@@ -382,13 +382,13 @@ public class CameraPreview extends AppCompatActivity implements SurfaceHolder.Ca
         }
     }
 
-    @Override
+    /*@Override
     public void onBackPressed()
     {
         Intent intent = new Intent(CameraPreview.this,SignUp.class);
         startActivity(intent);
         finish();
-    }
+    }*/
 
     @Override
     public void onResume()

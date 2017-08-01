@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewOutlineProvider;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 public class UserProfile extends AppCompatActivity
@@ -15,16 +17,29 @@ public class UserProfile extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.user_prof);
-        RelativeLayout view = (RelativeLayout)findViewById(R.id.rel);
+        ImageView backbtn = (ImageView) findViewById(R.id.prof_backbtn);
+        ImageButton edit_dp = (ImageButton)findViewById(R.id.edit_dp);
 
-        view.setOutlineProvider(new ViewOutlineProvider()
+        backbtn.setOnClickListener(new View.OnClickListener()
         {
             @Override
-            public void getOutline(View view, Outline outline)
+            public void onClick(View v)
             {
-                outline.setRect(0, 0, view.getWidth(), view.getHeight());
+                Intent intent = new Intent(UserProfile.this,UserHome.class);
+                startActivity(intent);
             }
         });
+
+        edit_dp.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(UserProfile.this,CameraPreview.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     @Override
