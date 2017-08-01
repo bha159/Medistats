@@ -29,7 +29,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:text="My Profile"
+                android:text="@string/myprof"
                 android:textAllCaps="true"
                 android:textColor="@color/white"
                 android:textSize="18sp"
@@ -93,7 +93,7 @@
                     android:layout_marginLeft="8dp"
                     android:layout_marginRight="8dp"
                     android:layout_marginTop="8dp"
-                    android:text="Upload Picture"
+                    android:text="@string/upload_pic"
                     android:textAllCaps="true"
                     android:textColor="@color/theme"
                     android:textSize="14sp"
@@ -178,7 +178,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
                     android:background="@drawable/border_black"
-                    android:hint="Address"
+                    android:hint="@string/addr"
                     android:inputType="text"
                     android:textColor="@color/black"
                     android:textColorHint="@color/black" />
@@ -189,7 +189,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
                     android:background="@drawable/border_black"
-                    android:hint="Occupation"
+                    android:hint="@string/occ"
                     android:inputType="text"
                     android:textColor="@color/black"
                     android:textColorHint="@color/black" />
@@ -203,7 +203,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Date Of Birth"
+                        android:text="@string/d0b"
                         android:textAllCaps="true"
                         android:textColor="@color/theme"
                         android:textSize="16sp"
@@ -442,6 +442,7 @@
                     <android.support.v7.widget.AppCompatCheckBox
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
                         android:checked="false"
                         android:text="White"
                         android:textColor="@color/black"
@@ -456,8 +457,139 @@
                         android:textColor="@color/black"
                         android:textSize="12sp"
                         app:buttonTint="@color/black" />
-
                 </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="@string/blood_grp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/theme"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/border_black"
+                        android:clickable="true"
+                        android:padding="8dp"
+                        android:text="@string/a"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/border_black"
+                        android:clickable="true"
+                        android:padding="8dp"
+                        android:text="@string/b"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/border_black"
+                        android:clickable="true"
+                        android:padding="8dp"
+                        android:text="@string/ab"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/border_black"
+                        android:clickable="true"
+                        android:padding="8dp"
+                        android:text="@string/o"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="@string/hcare"
+                    android:textAllCaps="true"
+                    android:textColor="@color/theme"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/yes"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/black" />
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/no"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/black" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edit_dname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/border_black"
+                    android:hint="@string/doc_name"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+
+                <EditText
+                    android:id="@+id/edit_dname_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/border_black"
+                    android:hint="@string/doc_no"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
