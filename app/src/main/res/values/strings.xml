@@ -50,6 +50,10 @@
     <string name="ab">AB</string>
     <string name="o">O</string>
     <string name="blood_grp">Blood Group</string>
+    <string name="search">Search</string>
+    <string name="recent_hist">Recent History</string>
+    <string name="back_hist">Back History</string>
+    <string name="family_hist">Family History</string>
     <!-- Navigation Drawer -->
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
