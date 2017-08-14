@@ -250,6 +250,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="16dp"
+                    android:drawablePadding="4dp"
                     android:background="@drawable/rectangleborder"
                     android:drawableLeft="@drawable/phone"
                     android:drawableStart="@drawable/phone"
