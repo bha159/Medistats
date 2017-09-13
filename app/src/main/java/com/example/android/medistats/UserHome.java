@@ -106,7 +106,8 @@ public class UserHome extends AppCompatActivity implements NavigationView.OnNavi
                     })
                     .setNegativeButton("Yes", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int id) {
-                            UserHome.this.finish();
+                            finish();
+                            System.exit(0);
                         }
                     });
             AlertDialog alert = builder.create();

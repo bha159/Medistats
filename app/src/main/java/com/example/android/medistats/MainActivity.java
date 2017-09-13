@@ -233,13 +233,12 @@ public class MainActivity extends AppCompatActivity
                 .setCancelable(false)
                 .setPositiveButton("No", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        MainActivity.this.finish();
+                        dialog.cancel();
                     }
                 })
                 .setNegativeButton("Yes", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        MainActivity.this.finish();
-                        dialog.cancel();
+                        System.exit(0);
                     }
                 });
         AlertDialog alert = builder.create();
