@@ -1,4 +1,4 @@
-package com.example.shubham.newsreader;
+package com.example.android.medistats;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

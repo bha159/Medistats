@@ -76,7 +76,8 @@
             android:layout_margin="16dp"
             android:padding="8dp"
             android:text="@string/signin"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:background="@color/colorPrimary"/>
 
         <TextView
             android:id="@+id/forgetpass"

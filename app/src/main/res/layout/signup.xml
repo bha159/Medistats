@@ -110,6 +110,7 @@
             android:id="@+id/doc_up"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:descendantFocusability="beforeDescendants"
             android:orientation="vertical"
             android:visibility="invisible">
 
@@ -179,6 +180,7 @@
 
                     <TextView
                         android:id="@+id/doc_dob_tx"
+                        android:clickable="true"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:contentDescription="@string/dob"
@@ -250,9 +252,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="16dp"
-                    android:drawablePadding="4dp"
                     android:background="@drawable/rectangleborder"
                     android:drawableLeft="@drawable/phone"
+                    android:drawablePadding="4dp"
                     android:drawableStart="@drawable/phone"
                     android:hint="@string/phoneno"
                     android:inputType="phone"
@@ -357,6 +359,7 @@
                 android:id="@+id/doc_signup"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
                 android:padding="8dp"
                 android:text="@string/create_acc" />
 
@@ -375,6 +378,7 @@
             android:id="@+id/user_up"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:descendantFocusability="beforeDescendants"
             android:orientation="vertical"
             android:visibility="invisible">
 
@@ -466,6 +470,7 @@
                     <TextView
                         android:id="@+id/user_dob_tx"
                         android:layout_width="wrap_content"
+                        android:clickable="true"
                         android:layout_height="wrap_content"
                         android:contentDescription="@string/dob"
                         android:hint="@string/dob"
@@ -594,6 +599,7 @@
                 android:id="@+id/user_signup"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
                 android:padding="8dp"
                 android:text="@string/create_acc" />
 

@@ -201,8 +201,10 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        android:id="@+id/textView2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:paddingRight="8dp"
                         android:text="@string/d0b"
                         android:textAllCaps="true"
@@ -218,21 +220,21 @@
 
                         <TextView
                             android:id="@+id/edit_dob_tx"
+                            android:clickable="true"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:contentDescription="@string/dob"
                             android:hint="@string/dob"
-                            android:padding="8dp"
-                            android:paddingRight="8dp"
+                            android:textColorHint="@color/black"
+                            android:padding="16dp"
                             android:textColor="@color/black"
-                            android:textSize="14sp"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
 
                         <ImageButton
                             android:id="@+id/edit_dob"
                             android:layout_width="wrap_content"
-                            android:layout_height="40dp"
+                            android:layout_height="wrap_content"
                             android:src="@drawable/cal" />
 
                     </LinearLayout>
@@ -305,44 +307,37 @@
                     <Spinner
                         android:id="@+id/edit_heightf"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/border_black" />
+                        android:layout_height="wrap_content" />
 
                     <Spinner
                         android:id="@+id/edit_heighti"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/border_black" />
+                        android:layout_height="wrap_content" />
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
+
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:padding="8dp"
+                    android:text="Weight(In Kgs)"
+                    android:textAllCaps="true"
+                    android:textColor="@color/theme"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:padding="8dp"
-                        android:text="Weight(In Kgs)"
-                        android:textAllCaps="true"
-                        android:textColor="@color/theme"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/edit_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/border_black"
+                    android:hint="Weight"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="14sp" />
 
-                    <EditText
-                        android:id="@+id/edit_weight"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
-                        android:background="@drawable/border_black"
-                        android:hint="Weight"
-                        android:inputType="number"
-                        android:textColor="@color/black"
-                        android:textColorHint="@color/black"
-                        android:textSize="14sp" />
-
-                </LinearLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -358,11 +353,9 @@
                     android:id="@+id/edit_precond"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@color/white"
                     android:dropDownWidth="wrap_content"
                     android:entries="@color/theme"
-                    android:padding="8dp"
-                    android:popupBackground="@drawable/border_black" />
+                    android:padding="8dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -378,11 +371,9 @@
                     android:id="@+id/edit_gencond"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@color/white"
                     android:dropDownWidth="wrap_content"
                     android:entries="@color/theme"
-                    android:padding="8dp"
-                    android:popupBackground="@drawable/border_black" />
+                    android:padding="8dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -612,13 +603,14 @@
                     android:textColor="@color/black"
                     android:textColorHint="@color/black" />
             </LinearLayout>
+
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:clickable="true"
-                android:background="@color/colorPrimary"
                 android:layout_gravity="center"
-                android:text="Submit"/>
+                android:background="@color/colorPrimary"
+                android:clickable="true"
+                android:text="Submit" />
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

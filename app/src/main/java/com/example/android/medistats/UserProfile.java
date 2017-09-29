@@ -31,7 +31,7 @@ public class UserProfile extends AppCompatActivity {
         cal = (ImageButton) findViewById(R.id.edit_dob);
         dob = (TextView) findViewById(R.id.edit_dob_tx);
         hei_f=(Spinner)findViewById(R.id.edit_heightf);
-        ArrayAdapter<String> adp_heif = new ArrayAdapter<String>(UserProfile.this,android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.height));
+        ArrayAdapter<String> adp_heif = new ArrayAdapter<>(UserProfile.this,android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.height));
         adp_heif.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         hei_f.setPrompt("Height(In inch)");
         hei_f.setAdapter(adp_heif);
@@ -51,6 +51,39 @@ public class UserProfile extends AppCompatActivity {
         };
 
         cal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final Calendar c = Calendar.getInstance();
+                mYear = c.get(Calendar.YEAR);
+                mMonth = c.get(Calendar.MONTH);
+                mDay = c.get(Calendar.DAY_OF_MONTH);
+
+                // Launch Date Picker Dialog
+                DatePickerDialog dpd = new DatePickerDialog(UserProfile.this, new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+                        // Display Selected date in textbox
+
+                        if (year < mYear)
+                            view.updateDate(mYear, mMonth, mDay);
+
+                        if (monthOfYear < mMonth && year == mYear)
+                            view.updateDate(mYear, mMonth, mDay);
+
+                        if (dayOfMonth < mDay && year == mYear && monthOfYear == mMonth)
+                            view.updateDate(mYear, mMonth, mDay);
+
+                        dob.setText(dayOfMonth + "-"
+                                + (monthOfYear + 1) + "-" + year);
+
+                    }
+                }, mYear, mMonth, mDay);
+                //dpd.getDatePicker().setMinDate(System.currentTimeMillis());
+                dpd.show();
+
+            }
+        });
+        dob.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 final Calendar c = Calendar.getInstance();
