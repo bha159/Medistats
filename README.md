@@ -3,3 +3,8 @@ The ultimate android application bringing medicalcare and e-commerce together in
 
 # Website
 http://www.astrophile.in
+
+# Contributor
+Shubham Dhingra
+Bharat Kumar
+
