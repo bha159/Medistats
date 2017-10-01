@@ -66,58 +66,112 @@
             android:paddingRight="16dp"
             android:paddingTop="16dp">
 
-            <TextView
-                android:id="@+id/recent_hist"
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="0dp"
-                android:layout_marginBottom="16dp"
-                android:background="@color/white"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
                 android:clickable="true"
-                android:padding="16dp"
-                android:text="@string/recent_hist"
-                android:textAllCaps="true"
-                android:textColor="@color/theme"
-                android:textSize="22sp"
-                android:textStyle="bold" />
+                android:elevation="5dp"
+                card_view:cardCornerRadius="5dp">
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="16dp" />
+                <TextView
+                    android:id="@+id/recent_hist_tx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:padding="16dp"
+                    android:text="@string/recent_hist"
+                    android:textAllCaps="true"
+                    android:textColor="@color/theme"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/back_hist"
+                <ImageView
+                    android:id="@+id/recent_hist_im"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:contentDescription="@string/rarrow"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_48dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="0dp"
-                android:background="@color/white"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
                 android:clickable="true"
-                android:padding="16dp"
-                android:text="@string/back_hist"
-                android:textAllCaps="true"
-                android:textColor="@color/theme"
-                android:textSize="22sp"
-                android:textStyle="bold" />
+                android:elevation="5dp"
+                card_view:cardCornerRadius="5dp">
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="16dp"
-                android:layout_weight="1" />
+                <TextView
+                    android:id="@+id/back_hist_tx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:padding="16dp"
+                    android:text="@string/back_hist"
+                    android:textAllCaps="true"
+                    android:textColor="@color/theme"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/family_hist"
+                <ImageView
+                    android:id="@+id/back_hist_im"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:contentDescription="@string/rarrow"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_48dp" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="0dp"
-                android:background="@color/white"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
                 android:clickable="true"
-                android:padding="16dp"
-                android:text="@string/family_hist"
-                android:textAllCaps="true"
-                android:textColor="@color/theme"
-                android:textSize="22sp"
-                android:textStyle="bold" />
+                android:elevation="5dp"
+                card_view:cardCornerRadius="5dp">
 
+                <TextView
+                    android:id="@+id/family_hist_tx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:padding="16dp"
+                    android:text="@string/family_hist"
+                    android:textAllCaps="true"
+                    android:textColor="@color/theme"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/family_hist_im"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:contentDescription="@string/rarrow"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_48dp" />
+
+            </android.support.v7.widget.CardView>
         </LinearLayout>
 
     </ScrollView>

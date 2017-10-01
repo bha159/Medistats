@@ -6,21 +6,21 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 
-public class UserFamilyHist extends AppCompatActivity
+public class UserSibHist extends AppCompatActivity
 {
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.user_familyhist);
-        ImageView backbtn = (ImageView) findViewById(R.id.fhist_backbtn);
+        setContentView(R.layout.user_siblinghist);
+        ImageView backbtn = (ImageView) findViewById(R.id.shist_backbtn);
 
         backbtn.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
             {
-                Intent intent = new Intent(UserFamilyHist.this,UserHistory.class);
+                Intent intent = new Intent(UserSibHist.this,UserFamilyHist.class);
                 startActivity(intent);
                 finish();
             }
@@ -31,7 +31,7 @@ public class UserFamilyHist extends AppCompatActivity
     @Override
     public void onBackPressed()
     {
-        Intent intent = new Intent(UserFamilyHist.this,UserHistory.class);
+        Intent intent = new Intent(UserSibHist.this,UserFamilyHist.class);
         startActivity(intent);
         finish();
     }

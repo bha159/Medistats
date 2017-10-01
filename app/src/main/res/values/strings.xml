@@ -56,6 +56,9 @@
     <string name="family_hist">Family History</string>
     <string name="gender">Gender</string>
     <string name="height">Height</string>
+    <string name="rarrow">Right Arrow</string>
+    <string name="parent_hist">Parental History</string>
+    <string name="sibling_hist">Sibling History</string>
     <!-- Navigation Drawer -->
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
