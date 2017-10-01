@@ -32,7 +32,7 @@
                 android:text="@string/myprof"
                 android:textAllCaps="true"
                 android:textColor="@color/white"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
         </RelativeLayout>
@@ -220,14 +220,14 @@
 
                         <TextView
                             android:id="@+id/edit_dob_tx"
-                            android:clickable="true"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:clickable="true"
                             android:contentDescription="@string/dob"
                             android:hint="@string/dob"
-                            android:textColorHint="@color/black"
                             android:padding="16dp"
                             android:textColor="@color/black"
+                            android:textColorHint="@color/black"
                             android:textSize="18sp"
                             android:textStyle="bold" />
 
@@ -235,6 +235,7 @@
                             android:id="@+id/edit_dob"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:contentDescription="@string/d0b"
                             android:src="@drawable/cal" />
 
                     </LinearLayout>
@@ -251,10 +252,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
-                        android:text="Gender"
+                        android:text="@string/gender"
                         android:textAllCaps="true"
                         android:textColor="@color/theme"
-                        android:textSize="18sp"
+                        android:textSize="16sp"
                         android:textStyle="bold" />
 
                     <RadioGroup
@@ -289,30 +290,53 @@
                     </RadioGroup>
                 </LinearLayout>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="@string/height"
+                    android:textAllCaps="true"
+                    android:textColor="@color/theme"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:padding="8dp"
-                        android:text="Height"
-                        android:textAllCaps="true"
-                        android:textColor="@color/theme"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
 
                     <Spinner
                         android:id="@+id/edit_heightf"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:theme="@style/ThemeOverlay.AppCompat.Light" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:text="(feets)"
+                        android:textColor="@color/theme"
+                        android:textSize="16sp" />
+
 
                     <Spinner
                         android:id="@+id/edit_heighti"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:theme="@style/ThemeOverlay.AppCompat.Light" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:text="(inches)"
+                        android:textColor="@color/theme"
+                        android:textSize="16sp" />
+
                 </LinearLayout>
 
 
@@ -331,7 +355,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
-                    android:background="@drawable/border_black"
                     android:hint="Weight"
                     android:inputType="number"
                     android:textColor="@color/black"
@@ -353,9 +376,7 @@
                     android:id="@+id/edit_precond"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:dropDownWidth="wrap_content"
-                    android:entries="@color/theme"
-                    android:padding="8dp" />
+                    android:theme="@style/ThemeOverlay.AppCompat.Light"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -371,9 +392,7 @@
                     android:id="@+id/edit_gencond"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:dropDownWidth="wrap_content"
-                    android:entries="@color/theme"
-                    android:padding="8dp" />
+                    android:theme="@style/ThemeOverlay.AppCompat.Light"/>
 
                 <TextView
                     android:layout_width="wrap_content"

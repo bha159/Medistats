@@ -54,6 +54,8 @@
     <string name="recent_hist">Recent History</string>
     <string name="back_hist">Back History</string>
     <string name="family_hist">Family History</string>
+    <string name="gender">Gender</string>
+    <string name="height">Height</string>
     <!-- Navigation Drawer -->
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -70,7 +72,7 @@
     <!-- Toolbar titles when navigation menu item is selected -->
     <string name="action_logout">Logout</string>
     <!-- Arrays -->
-    <string-array name="height">
+    <string-array name="heightf">
         <item>1</item>
         <item>2</item>
         <item>3</item>
@@ -81,5 +83,19 @@
         <item>8</item>
         <item>9</item>
         <item>10</item>
+    </string-array>
+    <string-array name="heighti">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
     </string-array>
 </resources>

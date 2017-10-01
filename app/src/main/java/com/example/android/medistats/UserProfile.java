@@ -18,9 +18,9 @@ import java.util.Locale;
 
 public class UserProfile extends AppCompatActivity {
     ImageButton cal;
-    TextView dob;
+    TextView dob, upload;
+    Spinner hei_f, hei_i, pre_mc, gen_mc;
     private int mYear, mMonth, mDay;
-    Spinner hei_f,hei_i,pre_mc,gen_mc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,11 +30,23 @@ public class UserProfile extends AppCompatActivity {
         ImageButton edit_dp = (ImageButton) findViewById(R.id.edit_dp);
         cal = (ImageButton) findViewById(R.id.edit_dob);
         dob = (TextView) findViewById(R.id.edit_dob_tx);
-        hei_f=(Spinner)findViewById(R.id.edit_heightf);
-        ArrayAdapter<String> adp_heif = new ArrayAdapter<>(UserProfile.this,android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.height));
-        adp_heif.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        hei_f.setPrompt("Height(In inch)");
-        hei_f.setAdapter(adp_heif);
+        upload = (TextView) findViewById(R.id.textView);
+        hei_f = (Spinner) findViewById(R.id.edit_heightf);
+        hei_i = (Spinner) findViewById(R.id.edit_heighti);
+        pre_mc = (Spinner) findViewById(R.id.edit_precond);
+        gen_mc = (Spinner) findViewById(R.id.edit_gencond);
+        //Spinner added
+
+        //Adapter Created
+        ArrayAdapter<CharSequence> heif = ArrayAdapter.createFromResource(this,
+                R.array.heightf, R.layout.cutom_spinner);
+        //Aadapter applied
+        hei_f.setAdapter(heif);
+        //Adapater Created
+        ArrayAdapter<CharSequence> heii = ArrayAdapter.createFromResource(this,
+                R.array.heighti, R.layout.cutom_spinner);
+        //Adapter applied
+        hei_i.setAdapter(heii);
 
         final Calendar myCalendar = Calendar.getInstance();
         final DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
@@ -127,6 +139,14 @@ public class UserProfile extends AppCompatActivity {
         });
 
         edit_dp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(UserProfile.this, CameraPreview.class);
+                startActivity(intent);
+            }
+        });
+
+        upload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(UserProfile.this, CameraPreview.class);
