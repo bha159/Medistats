@@ -197,7 +197,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
+
                     android:orientation="horizontal">
 
                     <TextView
@@ -308,6 +308,7 @@
 
                     <Spinner
                         android:id="@+id/edit_heightf"
+                        android:layout_margin="8dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:theme="@style/ThemeOverlay.AppCompat.Light" />
@@ -354,7 +355,7 @@
                     android:id="@+id/edit_weight"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
+                    android:padding="8dp"
                     android:hint="Weight"
                     android:inputType="number"
                     android:textColor="@color/black"
@@ -597,7 +598,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="8dp"
                     android:layout_marginRight="8dp"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/border_black"
@@ -612,7 +612,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="8dp"
                     android:layout_marginRight="8dp"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/border_black"

@@ -92,6 +92,10 @@
             android:name=".UserSibHist"
             android:label="Medistats"
             android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".UserHistoryDetail"
+            android:label="Medistats"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>

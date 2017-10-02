@@ -40,7 +40,7 @@ public class UserHistory extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                Intent intent = new Intent(UserHistory.this,UserHome.class);
+                Intent intent = new Intent(UserHistory.this,UserHistoryDetail.class);
                 startActivity(intent);
                 finish();
             }
@@ -50,7 +50,7 @@ public class UserHistory extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                Intent intent = new Intent(UserHistory.this,UserHome.class);
+                Intent intent = new Intent(UserHistory.this,UserHistoryDetail.class);
                 startActivity(intent);
                 finish();
             }
@@ -71,7 +71,7 @@ public class UserHistory extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                Intent intent = new Intent(UserHistory.this,UserHome.class);
+                Intent intent = new Intent(UserHistory.this,UserHistoryDetail.class);
                 startActivity(intent);
                 finish();
             }
@@ -81,7 +81,7 @@ public class UserHistory extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                Intent intent = new Intent(UserHistory.this,UserHome.class);
+                Intent intent = new Intent(UserHistory.this,UserHistoryDetail.class);
                 startActivity(intent);
                 finish();
             }

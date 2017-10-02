@@ -47,6 +47,16 @@ public class UserProfile extends AppCompatActivity {
                 R.array.heighti, R.layout.cutom_spinner);
         //Adapter applied
         hei_i.setAdapter(heii);
+		//Adapter Created
+        ArrayAdapter<CharSequence> med = ArrayAdapter.createFromResource(this,
+                R.array.diseases, R.layout.cutom_spinner);
+        //Aadapter applied
+        pre_mc.setAdapter(med);
+		//Adapter Created
+        ArrayAdapter<CharSequence> gene = ArrayAdapter.createFromResource(this,
+                R.array.genetic_disease, R.layout.cutom_spinner);
+        //Aadapter applied
+        gen_mc.setAdapter(gene);
 
         final Calendar myCalendar = Calendar.getInstance();
         final DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {

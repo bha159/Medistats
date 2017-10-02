@@ -36,16 +36,6 @@
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/par_hist"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="16dp"
-                android:clickable="true"
-                android:contentDescription="@string/search"
-                android:src="@drawable/search" />
-
         </RelativeLayout>
 
 

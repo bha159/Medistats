@@ -101,4 +101,68 @@
         <item>11</item>
         <item>12</item>
     </string-array>
+    <string-array name="diseases">
+    	<item>Malaria</item>
+    	<item>Influenza</item>
+    	<item>Typhoid</item>
+    	<item>Cholera</item>
+    	<item>Small Pox</item>
+    	<item>Chicken Pox</item>
+    	<item>Severe Respiratory Distress</item>
+    	<item>Yellow Fever</item>
+    	<item>HIV</item>
+    	<item>Measles</item>
+    	<item>Mumps</item>
+    	<item>Diptheria</item>
+    	<item>Dysentry</item>
+    	<item>Poliomyelitis</item>
+    	<item>Dengu Fever</item>
+    	<item>Pertussis</item>
+    	<item>Bubonic Plague</item>
+    	<item>Epidermic Typhus</item>
+    	<item>Hepatitis</item>
+    	<item>Encephalitis</item>
+    	<item>High BP</item>
+    	<item>Low BP</item>
+    	<item>Tuberclosis</item>
+    	<item>Kala azar</item>
+    	<item>Rift Valley Fever</item>
+    	<item>Chikungunya</item>
+    	<item>Leptospirosis</item>
+    	<item>Schistosomiasis</item>
+    	<item>Meningococcal Meningitis</item>
+    	<item>Rabies</item>
+    </string-array>
+    <string-array name="genetic_disease">
+    	<item>Cystic Fibrosis</item>
+    	<item>Fragile X Syndrome</item>
+    	<item>Gaucher\'s Disease</item>
+    	<item>Hemochromatosis</item>
+    	<item>Huntington Disease</item>
+    	<item>Klinefelter Syndrome</item>
+    	<item>Marfan Syndrome</item>
+    	<item>Neurofibromatosis</item>
+    	<item>Polycystic Kidney Disease</item>
+    	<item>Sex Reversal</item>
+    	<item>Turner Syndrome</item>
+    </string-array>
+    <string-array name="surgeries">
+    	<item>Hernioplasty</item>
+    	<item>Appendicectomy</item>
+    	<item>C-Section(Pregnancy)</item>
+    	<item>Renal Calculi</item>
+    	<item>Cataract</item>
+    	<item>Glaucoma</item>
+    	<item>Ovariancyst</item>
+    	<item>Hysterectomy</item>
+    	<item>Cardiac Bypass</item>
+    	<item>Cholecystectomy</item>
+    	<item>Thyroldectomy</item>
+    	<item>Mastectomy</item>
+    	<item>Tumor Surgery</item>
+    	<item>Tonsillectomy</item>
+    	<item>Prostatectomy</item>
+    	<item>Tympanoplasty</item>
+    	<item>Adenoidectomy</item>
+    </string-array>
 </resources>
