@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/report_toolbar"
@@ -35,14 +35,6 @@
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:clickable="true"
-                android:layout_marginRight="16dp"
-                android:layout_alignParentEnd="true"
-                android:src="@drawable/search"/>
-
         </RelativeLayout>
 
 
@@ -64,60 +56,292 @@
             android:paddingRight="16dp"
             android:paddingTop="16dp">
 
-            <TextView
-                android:id="@+id/recent_hist"
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/ecg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:padding="16dp"
+                    android:text="ECG"
+                    android:textAllCaps="true"
+                    android:textColor="@color/theme"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/ecg_im"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@id/ecg"
+                    android:layout_marginBottom="16dp"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:src="@drawable/ic_keyboard_arrow_down_black_48dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ecg_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="0dp"
-                android:layout_marginBottom="16dp"
+                android:layout_margin="8dp"
                 android:background="@color/white"
-                android:clickable="true"
+                android:orientation="vertical"
                 android:padding="16dp"
-                android:text="ECG"
-                android:textAllCaps="true"
-                android:textColor="@color/theme"
-                android:textSize="22sp"
-                android:textStyle="bold" />
+                android:visibility="gone">
 
-            <Space
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_marginBottom="16dp"
+                    android:clickable="true"
+                    android:padding="16dp"
+                    android:text="Upload ECG"
+                    android:textAllCaps="true"
+                    android:textColor="@color/theme"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/whitish" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="DURATION"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:theme="@style/ThemeOverlay.AppCompat.Light" />
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:theme="@style/ThemeOverlay.AppCompat.Light" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/theme"
+                    android:clickable="true"
+                    android:text="Submit" />
+
+            </LinearLayout>
+
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="16dp" />
+                android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/back_hist"
+                <TextView
+                    android:id="@+id/mri"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:padding="16dp"
+                    android:text="MRI"
+                    android:textAllCaps="true"
+                    android:textColor="@color/theme"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/mri_im"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@id/mri"
+                    android:layout_marginBottom="16dp"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:src="@drawable/ic_keyboard_arrow_down_black_48dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/mri_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="0dp"
+                android:layout_margin="8dp"
                 android:background="@color/white"
-                android:clickable="true"
+                android:orientation="vertical"
                 android:padding="16dp"
-                android:text="MRI"
-                android:textAllCaps="true"
-                android:textColor="@color/theme"
-                android:textSize="22sp"
-                android:textStyle="bold" />
+                android:visibility="gone">
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_marginBottom="16dp"
+                    android:clickable="true"
+                    android:padding="16dp"
+                    android:text="Upload MRI"
+                    android:textAllCaps="true"
+                    android:textColor="@color/theme"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
-            <Space
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/whitish" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="DURATION"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:theme="@style/ThemeOverlay.AppCompat.Light" />
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:theme="@style/ThemeOverlay.AppCompat.Light" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/theme"
+                    android:clickable="true"
+                    android:text="Submit" />
+
+            </LinearLayout>
+
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="16dp"
-                android:layout_weight="1" />
+                android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/family_hist"
+                <TextView
+                    android:id="@+id/scans"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:padding="16dp"
+                    android:text="SCANS"
+                    android:textAllCaps="true"
+                    android:textColor="@color/theme"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/scans_im"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@id/scans"
+                    android:layout_marginBottom="16dp"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:src="@drawable/ic_keyboard_arrow_down_black_48dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/scans_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="0dp"
+                android:layout_margin="8dp"
                 android:background="@color/white"
-                android:clickable="true"
+                android:orientation="vertical"
                 android:padding="16dp"
-                android:text="Scans"
-                android:textAllCaps="true"
-                android:textColor="@color/theme"
-                android:textSize="22sp"
-                android:textStyle="bold" />
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/child_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_marginBottom="16dp"
+                    android:clickable="true"
+                    android:padding="16dp"
+                    android:text="Upload SCANS"
+                    android:textAllCaps="true"
+                    android:textColor="@color/theme"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/whitish" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="DURATION"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:theme="@style/ThemeOverlay.AppCompat.Light" />
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:theme="@style/ThemeOverlay.AppCompat.Light" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/theme"
+                    android:clickable="true"
+                    android:text="Submit" />
+
+            </LinearLayout>
 
         </LinearLayout>
-
     </ScrollView>
-</RelativeLayout>
+</LinearLayout>

@@ -506,57 +506,45 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <TextView
+                    <android.support.v7.widget.AppCompatCheckBox
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
-                        android:background="@drawable/border_black"
-                        android:clickable="true"
-                        android:padding="8dp"
-                        android:text="@string/a"
-                        android:textAllCaps="true"
+                        android:layout_marginRight="8dp"
+                        android:checked="false"
+                        android:text="A"
                         android:textColor="@color/black"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textSize="12sp"
+                        app:buttonTint="@color/black" />
 
-                    <TextView
+                    <android.support.v7.widget.AppCompatCheckBox
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
-                        android:background="@drawable/border_black"
-                        android:clickable="true"
-                        android:padding="8dp"
-                        android:text="@string/b"
-                        android:textAllCaps="true"
+                        android:layout_marginRight="8dp"
+                        android:checked="false"
+                        android:text="B"
                         android:textColor="@color/black"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textSize="12sp"
+                        app:buttonTint="@color/black" />
 
-                    <TextView
+                    <android.support.v7.widget.AppCompatCheckBox
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
-                        android:background="@drawable/border_black"
-                        android:clickable="true"
-                        android:padding="8dp"
-                        android:text="@string/ab"
-                        android:textAllCaps="true"
+                        android:layout_marginRight="8dp"
+                        android:checked="false"
+                        android:text="AB"
                         android:textColor="@color/black"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textSize="12sp"
+                        app:buttonTint="@color/black" />
 
-                    <TextView
+                    <android.support.v7.widget.AppCompatCheckBox
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
-                        android:background="@drawable/border_black"
-                        android:clickable="true"
-                        android:padding="8dp"
-                        android:text="@string/o"
-                        android:textAllCaps="true"
+                        android:layout_marginRight="8dp"
+                        android:checked="false"
+                        android:text="O"
                         android:textColor="@color/black"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textSize="12sp"
+                        app:buttonTint="@color/black" />
                 </LinearLayout>
 
                 <TextView
