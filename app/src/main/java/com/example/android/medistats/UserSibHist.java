@@ -31,7 +31,7 @@ public class UserSibHist extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                Intent intent = new Intent(UserSibHist.this,UserFamilyHist.class);
+                Intent intent = new Intent(UserSibHist.this,UserHistory.class);
                 startActivity(intent);
                 finish();
             }
@@ -42,7 +42,7 @@ public class UserSibHist extends AppCompatActivity
     @Override
     public void onBackPressed()
     {
-        Intent intent = new Intent(UserSibHist.this,UserFamilyHist.class);
+        Intent intent = new Intent(UserSibHist.this,UserHistory.class);
         startActivity(intent);
         finish();
     }
