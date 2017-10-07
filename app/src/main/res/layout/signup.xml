@@ -12,8 +12,8 @@
         android:gravity="center"
         android:text="@string/signup"
         android:textAllCaps="true"
-        android:textSize="30sp"
         android:textColor="@color/white"
+        android:textSize="30sp"
         android:textStyle="bold" />
 
     <TextView
@@ -358,6 +358,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="@color/colorPrimary"
                         android:padding="8dp"
                         android:text="@string/upload" />
                 </LinearLayout>
